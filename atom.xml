@@ -1,0 +1,537 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://frazy8.github.io</id>
+    <title>Frazy的后花园</title>
+    <updated>2024-12-14T12:50:17.354Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://frazy8.github.io"/>
+    <link rel="self" href="https://frazy8.github.io/atom.xml"/>
+    <subtitle>温故而知新</subtitle>
+    <logo>https://frazy8.github.io/images/avatar.png</logo>
+    <icon>https://frazy8.github.io/favicon.ico</icon>
+    <rights>All rights reserved 2024, Frazy的后花园</rights>
+    <entry>
+        <title type="html"><![CDATA[不用登录的临时文件共享神器]]></title>
+        <id>https://frazy8.github.io/post/bu-yong-deng-lu-de-lin-shi-wen-jian-gong-xiang-shen-qi/</id>
+        <link href="https://frazy8.github.io/post/bu-yong-deng-lu-de-lin-shi-wen-jian-gong-xiang-shen-qi/">
+        </link>
+        <updated>2024-12-13T06:51:30.000Z</updated>
+        <content type="html"><![CDATA[<p><a href="https://www.wenshushu.cn">文叔叔</a> 是一款临时网盘服务，对注册用户提供了 20GB 的存储空间，单个文件限制最大 5GB，同时解决了分享文件和收集文件两个问题。</p>
+<p><strong>分享文件</strong><br>
+不用登录可以快速上传（服务器位于国内，速度很快）文件，然后分享给好友：</p>
+<p>支持加密分享；<br>
+支持分享给多人；<br>
+支持公开链接分享；<br>
+支持分享整个文件夹；<br>
+有效期最多 7 天；<br>
+过期文件自动销毁；<br>
+不过，对于超过 20MB 的文件，下载限制为 4 次，VIP 用户不受限制。</p>
+<p><strong>网盘功能</strong><br>
+文叔叔提供了网盘服务，你可以上传最多 20GB 的文件到文叔叔里面的文小盘里，可以永久保存，也可以快速分享文件。</p>
+<p><strong>收集文件</strong><br>
+文叔叔可以向多人收集文件，只需要将收集链接分享给对用人员即可，被收集人员点击上传即可完成，可以设置收集截至时间，单个文件最大限制5GB。能集中收集到所有的文件，批量下载到电脑，对此类需求的用户能减少了许多的工作量。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[值得推荐的Windows软件列表]]></title>
+        <id>https://frazy8.github.io/post/ruan-jian-lie-biao/</id>
+        <link href="https://frazy8.github.io/post/ruan-jian-lie-biao/">
+        </link>
+        <updated>2024-12-09T06:34:12.000Z</updated>
+        <content type="html"><![CDATA[<h1 id="前言">前言</h1>
+<p>列表部分参考了<a href="https://github.com/AmazingApps/Amazing-Windows-Apps/tree/master">Awesome Windows</a>项目收录的绝赞应用，有删除和修改，并添加了个人觉得绝赞的新出现的软件。</p>
+<h2 id="音频">音频</h2>
+<hr>
+<h3 id="audacity">Audacity</h3>
+<p><a href="http://www.audacityteam.org/">官网</a>｜<a href="http://www.audacityteam.org/download/windows/">下载页面</a></p>
+<p>Audacity 是一个易用、多轨音频录制和编辑的自由、开源、跨平台音乐软件。可以在 Windows, Mac OS X, GNU/Linux 和其他操作系统上使用。</p>
+<h3 id="foobar2000">foobar2000</h3>
+<p><a href="http://www.foobar2000.org/">官网</a>｜<a href="http://www.foobar2000.org/download">下载页面</a></p>
+<p>Windows 平台下的高级音频播放器。包含了一些播放增益支持、低内存占用等基本特色以及内置支持一些流行的音频格式，可自定义快捷键，开放的组件体系结构允许第三 方开发者来扩展播放器的功能。</p>
+<h3 id="listen1"><a href="https://listen1.github.io/listen1">Listen1</a></h3>
+<p>一站式免费音乐集合，可以搜索和播放来自网易云音乐，QQ音乐，酷狗音乐，酷我音乐，Bilibili，咪咕音乐网站的歌曲，让你的曲库更全面。</p>
+<h3 id="ttkmusicplayer"><a href="https://github.com/Greedysky/TTKMusicplayer">TTKMusicplayer</a></h3>
+<p>天天酷音播放器，核心功能是采用基于 Qt 的 qmmp 框架，支持多种播放格式，适用于 windows 、linux 和 android 平台。支持网易云音乐、QQ 音乐、虾米音乐、酷我音乐、酷狗音乐、百度音乐等等的下载与试听。</p>
+<h3 id="方格音乐"><a href="http://fonger.top/">方格音乐</a></h3>
+<p>原魔音Morin，是一款干净简洁的聚合音乐收听以及付费音乐下载播放器。可以免费试听下载付费歌曲，导入其他音乐软件的歌单，识别第三方单曲链接。其他软件的推荐，排行榜，电台等等也都有。</p>
+<h3 id="musicfree">MusicFree</h3>
+<p><a href="https://github.com/maotoumao/MusicFree">安卓版</a>   <a href="https://github.com/maotoumao/MusicFreeDesktop">桌面版</a></p>
+<p>插件化、定制化、无广告的免费音乐播放器。</p>
+<hr>
+<h2 id="聊天客户端">聊天客户端</h2>
+<hr>
+<h3 id="discord">Discord</h3>
+<p><a href="https://discordapp.com/">官网</a>｜<a href="https://discordapp.com/download">下载页面</a></p>
+<p>为游戏社区设计，具备 DDoS 防护和游戏内界面。Discord从游戏语音 、IM工具服务起家，随后转向直播平台，进而开设游戏商店的社区平台，成为游戏玩家在游戏中沟通协作的首选工具。</p>
+<h3 id="telegram"><a href="https://desktop.telegram.org/">Telegram</a></h3>
+<p>跨平台的即时通讯软件，专注于速度与安全性的通信应用。它的客户端是自由及开放源代码软件，但是它的服务器是专有软件。使用者可以相互交换加密与自解构的讯息，以及相片、影片、文件，支援所有的档案类型。</p>
+<hr>
+<h2 id="压缩包处理">压缩包处理</h2>
+<hr>
+<h3 id="7-zip">7-Zip</h3>
+<p><a href="http://7-zip.org/">官网</a>｜<a href="http://7-zip.org/download.html">下载页面</a></p>
+<p>开源文件压缩管理，主要用于压缩文件，具备极致高压缩率</p>
+<h3 id="bandizip"><a href="http://www.bandisoft.com/bandizip/">Bandizip</a></h3>
+<p>轻量级快速免费的压缩管理，支持Zip、7Z 和 RAR 以及其它压缩格式。它拥有非常快速的压缩和解压缩的算法，适用于多核心压缩、快速拖放、高速压缩等功能，最新版已加入广告。</p>
+<hr>
+<h2 id="美化">美化</h2>
+<hr>
+<h3 id="mactype"><a href="http://www.mactype.net/">MacType</a></h3>
+<p>改进字体渲染效果，能使windows系统字体更加美观，更加便于阅读。</p>
+<h3 id="rainmeter"><a href="https://www.rainmeter.net/">Rainmeter</a></h3>
+<p>桌面个性化，为 Windows桌面增加很多小应用程序，还提供各种各样的主题风格。为你打造一个个性十足的 Windows 桌面。</p>
+<h3 id="startisback"><a href="http://startisback.com">StartIsBack</a></h3>
+<p>开始菜单个性化，还原旧版开始菜单，并提供足够多的自定义选项。</p>
+<hr>
+<h2 id="数据恢复">数据恢复</h2>
+<hr>
+<h3 id="eassos-recovery"><a href="http://www.eassos.com/">Eassos Recovery</a></h3>
+<p>可恢复磁盘分区的数据恢复工具</p>
+<ul>
+<li>该应用在国内称为 <a href="http://www.diskgenius.cn/download.php">DiskGenius</a></li>
+</ul>
+<h3 id="recuva">Recuva</h3>
+<p><a href="https://www.piriform.com/recuva">官网</a>｜<a href="https://www.piriform.com/recuva/download">下载页面</a></p>
+<p>简单快速文件恢复</p>
+<hr>
+<h2 id="开发者工具">开发者工具</h2>
+<hr>
+<h3 id="heidisql">HeidiSQL</h3>
+<p><a href="https://www.heidisql.com/">官网</a>｜<a href="https://www.heidisql.com/download.php">下载页面</a></p>
+<p>简洁的图形化的数据库管理工具，支持MySQL、SQLServer、PostgreSQL、SQLite等多种数据库。HeidiSQL提供了一个用于在数据库浏览之间切换 SQL 查询和标签带有语法突出显示的简单易用的界面。其它功能包括BLOB 和 MEMO 编辑，大型SQL脚本支持，用户进程管理等</p>
+<h3 id="virtualbox">VirtualBox</h3>
+<p><a href="https://www.virtualbox.org/">官网</a>｜<a href="https://www.virtualbox.org/wiki/Downloads">下载页面</a></p>
+<p>开源跨平台虚拟机应用，不仅有丰富的特色，而且性能也很优异。简单易用，可虚拟的系统包括Windows、Mac OS、Linux、OpenBSD、Solaris、甚至Android等操作系统。</p>
+<h3 id="xampp">XAMPP</h3>
+<p><a href="https://www.apachefriends.org/zh_cn/index.html">官网</a>｜<a href="https://www.apachefriends.org/zh_cn/download.html">下载页面</a></p>
+<p>完全免费且易于安装的 Apache 发行版，其中包含 MariaDB、PHP 和 Perl</p>
+<hr>
+<h2 id="下载工具">下载工具</h2>
+<hr>
+<h3 id="idm"><a href="http://internetdownloadmanager.com/">IDM</a></h3>
+<p>一款优秀下载的工具，具备响应错链解决能力，但注意该软件是一款共享收费软件。</p>
+<h3 id="qbittorrent">qBittorrent</h3>
+<p><a href="https://www.qbittorrent.org/">官网</a>｜<a href="https://www.qbittorrent.org/download.php">下载页面</a></p>
+<p>基于 Qt 的跨平台的自由BitTorrent客户端，简单易用，外观漂亮，功能强大。它可以被视为一个良好的替代其他BitTorrent软件的客户端。</p>
+<h3 id="resilio-sync">Resilio Sync</h3>
+<p><a href="https://www.resilio.com/">官网</a>｜<a href="https://www.resilio.com/individuals/">下载页面</a></p>
+<p>P2P 文件同步软件</p>
+<hr>
+<h2 id="电子书">电子书</h2>
+<hr>
+<h3 id="calibre">calibre</h3>
+<p><a href="http://calibre-ebook.com/">官网</a>｜<a href="http://calibre-ebook.com/download">下载页面</a></p>
+<p>功能强大且易于使用的电子书管理器。它也是完全免费和开源的，拥有跨平台的设计，一站式解决你的所有电子书需求。</p>
+<h3 id="sumatra-pdf">Sumatra PDF</h3>
+<p><a href="http://www.sumatrapdfreader.org/free-pdf-reader.html">官网</a>｜<a href="http://www.sumatrapdfreader.org/download-free-pdf-viewer.html">下载页面</a></p>
+<p>轻量级PDF阅读器，支持PDF ePub MOBI CHM XPS DjVu CBZ CBR等多种格式。</p>
+<hr>
+<h2 id="效率工具">效率工具</h2>
+<hr>
+<h3 id="listary"><a href="http://www.listary.com/">Listary</a></h3>
+<p>实用的搜索工具 。它能给资源管理器加上许多智能命令，含有收藏文件夹，快速打开最近浏览的文件夹，快速显示/隐藏文件扩展名等等实用功能。能给你日常的收藏和整理文件提高效率。</p>
+<h3 id="total-commander"><a href="https://www.ghisler.com/">Total Commander</a></h3>
+<p>简称TC，Windows 最佳文件管理器，收费。</p>
+<h3 id="xyplorer"><a href="https://www.xyplorer.com/">XYplorer</a></h3>
+<p>​XYplorer 是 Windows 的文件管理器。它具有选项卡式浏览、强大的文件搜索、多功能预览、高度可定制的界面、可选的双窗格以及许多有效自动执行重复性任务的独特方法。它快速、轻便、便携。</p>
+<h3 id="pixpin"><a href="https://pixpinapp.com/">PixPin</a></h3>
+<p>功能强大使用简单的截图/贴图工具，有截图/贴图/长截图/文字识别/标注等功能，帮助你提高效率。</p>
+<h3 id="he3工具箱"><a href="https://he3app.com/zh/">He3工具箱</a></h3>
+<p>内置 400 多种实用免费小工具合集，比如：JSON 格式化 / 转换成 XML / YAML、BASE64 编解码、测试正则表达式、时间戳转换、文本对比、HTTP 测试等，办公/编程必备利器。同类型的工具还有<a href="https://u.tools/">uTools</a>、<a href="https://www.alfredapp.com/">Alfre</a>等。</p>
+<h3 id="pot"><a href="https://pot-app.com/?ref=pidoutv.com">Pot</a></h3>
+<p>跨平台划词翻译和OCR软件，提供了丰富的接口配置功能，允许用户根据自己的需求选择不同的翻译引擎。包括OpenAI、智谱AI、阿里翻译、百度翻译、彩云小译、腾讯翻译君、火山翻译、小牛翻译、Google、Bing、DeepL等多个主流翻译服务。特色功能包括划词翻译、输入翻译、剪切板监听、截图OCR、多接口并行翻译、多接口文字识别、多接口语音合成以及导出到生词本等。</p>
+<hr>
+<h2 id="文件处理">文件处理</h2>
+<hr>
+<h3 id="beyond-compare">Beyond Compare</h3>
+<p><a href="http://www.scootersoftware.com/">官网</a>｜<a href="http://www.scootersoftware.com/download.php">下载页面</a></p>
+<p>高亮标注源代码、文件夹、图像等各种文件的差异，轻松地比较、合并和同步文件和文件夹。</p>
+<h3 id="duplicate-cleaner">Duplicate Cleaner</h3>
+<p><a href="https://www.digitalvolcano.co.uk/duplicatecleaner.html">官网</a>｜<a href="https://www.digitalvolcano.co.uk/dcdownloads.html">下载页面</a></p>
+<p>支持子目录搜索或MD5码搜索的重复文件查询工具，并且清除重复副本文件。</p>
+<h3 id="fastcopy"><a href="https://fastcopy.jp">FastCopy</a></h3>
+<p>快速复制、同步、删除文件，因为是多个线程同时进行的，所以比较快。</p>
+<h3 id="filezilla">FileZilla</h3>
+<p><a href="https://filezilla-project.org/">官网</a>｜<a href="https://filezilla-project.org/download.php?show_all=1">下载页面</a></p>
+<p>免费开源的FTP客户端，界面可控且有条理使得管理多站点简单方便。</p>
+<h3 id="freefilesync"><a href="http://www.freefilesync.org/">FreeFileSync</a></h3>
+<p>简单的文件（夹）备份工具，支持镜像、双向、更新等方式</p>
+<h3 id="renamer">ReNamer</h3>
+<p><a href="http://www.den4b.com/">官网</a>｜<a href="http://www.den4b.com/products/renamer">下载页面</a></p>
+<p>强大灵活的文件批量重命名工具，提供许多强大内置规则。</p>
+<h3 id="syncthing"><a href="https://syncthing.net/">Syncthing</a></h3>
+<p>开源免费跨平台的文件同步工具，不依赖云服务器即可在多计算机之间简单安全地同步文件。</p>
+<hr>
+<h2 id="游戏相关">游戏相关</h2>
+<hr>
+<h3 id="cheat-engine"><a href="http://www.cheatengine.org/">Cheat Engine</a></h3>
+<p>Cheat Engine是一款专注于游戏的修改器。它可以用来扫描游戏中的内存，并允许修改它们。它还附带了调试器、反汇编器、汇编器、变速器、作弊器生成、Direct3D操作工具、系统检查工具等。</p>
+<h3 id="steam"><a href="http://store.steampowered.com/">Steam</a></h3>
+<p>全球最大的综合性数字发行平台之一，支持主流硬件平台。玩家可以在该平台购买、下载、讨论、上传和分享游戏及软件。</p>
+<hr>
+<h2 id="极客玩物">极客玩物</h2>
+<hr>
+<h3 id="aria2"><a href="https://aria2.github.io/">aria2</a></h3>
+<p>轻量级多协议支持、多镜像、跨平台下载工具，使用命令行操作。支持 HTTP/HTTPS、FTP、SFTP、BT 与磁链</p>
+<h3 id="ffmpeg">FFmpeg</h3>
+<p><a href="https://ffmpeg.org/">官网</a>｜<a href="http://ffmpeg.zeranoe.com/builds/">下载页面</a></p>
+<p>跨平台，支持几乎所有格式的视频记录、转码、推流解决方案。</p>
+<h3 id="git">Git</h3>
+<p><a href="https://git-scm.com/">官网</a>｜<a href="https://git-scm.com/downloads">下载页面</a></p>
+<p>Git 是一个分布式版本控制软件，最初由Linus Torvalds创作，于2005年以GPL发布。最初目的是为更好地管理Linux内核开发而设计。</p>
+<h3 id="hfs"><a href="https://www.rejetto.com/hfs">HFS</a></h3>
+<p>专为个人用户设计的 HTTP 文件系统 - Http File Server，可以提供更为方便的文件传输，下载后无须安装，可直接执行。</p>
+<hr>
+<h2 id="硬件信息">硬件信息</h2>
+<hr>
+<h3 id="cpu-z"><a href="http://www.cpuid.com/softwares/cpu-z.html">CPU-Z</a></h3>
+<p>查看CPU型号、厂商、内核进程、内部和外部时钟、局部时钟监测等参数。</p>
+<h3 id="gpu-z">GPU-Z</h3>
+<p><a href="https://www.techpowerup.com/gpuz/">官网</a>｜<a href="https://www.techpowerup.com/download/techpowerup-gpu-z/#">下载页面</a></p>
+<p>显卡识别工具，显示显卡与图形处理器硬件信息的轻量级系统工具</p>
+<h3 id="crystaldiskinfo"><a href="http://crystalmark.info/software/CrystalDiskInfo/index-e.html">CrystalDiskInfo</a></h3>
+<p>HDD/SSD 信息工具，支持部分 USB 连接设备跟 Intel RAID</p>
+<h3 id="crystaldiskmark"><a href="http://crystalmark.info/software/CrystalDiskMark/index-e.html">CrystalDiskMark</a></h3>
+<p>电脑硬盘检测工具，简单易于操作的界面。可以测试存储设备大小和读写的速度。</p>
+<h3 id="open-hardware-monitor">Open Hardware Monitor</h3>
+<p><a href="http://openhardwaremonitor.org/">官网</a>｜<a href="http://openhardwaremonitor.org/downloads/">下载页面</a></p>
+<p>开源的硬件风扇转速、CPU/主板电压、温度、状态显示软件</p>
+<hr>
+<h2 id="图形图像">图形图像</h2>
+<hr>
+<h3 id="gimp">Gimp</h3>
+<p><a href="https://www.gimp.org/">官网</a>｜<a href="https://www.gimp.org/downloads/">下载页面</a></p>
+<p>开源图像编辑器</p>
+<h3 id="honeyview"><a href="http://www.bandisoft.com/honeyview/">Honeyview</a></h3>
+<p>超快图片查看，支持多种格式</p>
+<h3 id="paintnet">Paint.net</h3>
+<p><a href="https://www.getpaint.net/index.html">官网</a>｜<a href="https://www.getpaint.net/download.html">下载页面</a></p>
+<p>免费的图像照片编辑</p>
+<h3 id="waifu2x-extension-gui"><a href="https://github.com/AaronFeng753/Waifu2x-Extension-GUI">Waifu2x-Extension-GUI</a></h3>
+<p>使用机器学习放大 图片/视频/GIF 以及 视频插帧(补帧)，支持 AMD / Nvidia / Intel 显卡。</p>
+<h3 id="xnview">Xnview</h3>
+<p><a href="http://www.xnview.com/en/">官网</a>｜<a href="http://www.xnview.com/en/xnview/#downloads">下载页面</a></p>
+<p>高效的图片查看管理与转格式，格式支持最全</p>
+<hr>
+<h2 id="网络通信">网络通信</h2>
+<hr>
+<h3 id="anydesk"><a href="http://anydesk.com/">Anydesk</a></h3>
+<p>顺手的远程桌面应用</p>
+<h3 id="chrome"><a href="https://dl.google.com">Chrome</a></h3>
+<p>一款适用于计算机、手机和平板电脑的浏览器</p>
+<h3 id="chromium">Chromium</h3>
+<p><a href="https://www.chromium.org/Home">官网</a>｜<a href="https://www.chromium.org/getting-involved/download-chromium">下载页面</a></p>
+<p>Chromium 是一个由 Google 主导开发的网页浏览器，以 BSD 许可证等多重开源协议发行并且开放源代码，Chrome 和 Chromium 在实际功能上没有太大差距，可以说 Chromium 是 Chrome 的开源版本</p>
+<h3 id="teamviewer"><a href="http://www.teamviewer.com/">TeamViewer</a></h3>
+<p>远程控制与桌面共享会议工具，也可以共享文件</p>
+<hr>
+<h2 id="知识笔记">知识笔记</h2>
+<hr>
+<h3 id="leanote-蚂蚁笔记">Leanote 蚂蚁笔记</h3>
+<p><a href="https://leanote.com/">官网</a>｜<a href="http://app.leanote.com/">下载页面</a></p>
+<p>支持 Markdown 的开源笔记，也可以搭建个人博客，云同步需付费</p>
+<h3 id="simplenote"><a href="https://simplenote.com/">Simplenote</a></h3>
+<p>简单跨平台云同步笔记应用</p>
+<hr>
+<h2 id="实用程序">实用程序</h2>
+<hr>
+<h3 id="clipber"><a href="http://clipber.com/clipber/">Clipber</a> 快帖</h3>
+<p>跨平台系统剪贴板同步工具</p>
+<h3 id="office-tool-plus"><a href="https://otp.landian.vip/zh-cn/">Office Tool Plus</a></h3>
+<p>自定义安装 Microsoft Office，同时支持激活、卸载、配置等</p>
+<h3 id="rufus"><a href="http://rufus.akeo.ie/">rufus</a></h3>
+<p>简单地创建 U 盘启动盘，同类型的软件还有<a href="https://etcher.balena.io/">balenaEtcher</a>。</p>
+<h3 id="screentogif"><a href="http://www.screentogif.com/">ScreenToGif</a></h3>
+<p>将选定区域屏幕录制为 GIF 或视频</p>
+<p>###<a href="https://github.com/the1812/Malware-Patch">流氓软件屏蔽器</a></p>
+<p>阻止国内流氓软件的管理员授权, 无需后台运行</p>
+<hr>
+<h2 id="生产工具">生产工具</h2>
+<hr>
+<h3 id="autohotkey"><a href="https://www.autohotkey.com/">AutoHotkey</a></h3>
+<p>开源 Windows 脚本语言，用户可以轻松创建各种脚本完成各种任务</p>
+<h3 id="hellofont"><a href="https://www.hellofont.cn/">HelloFont</a> 字由</h3>
+<p>一站式字体管理、预览、备份与范例展示</p>
+<h3 id="drawio">draw.io</h3>
+<p><a href="https://draw.io">官网</a>｜<a href="https://github.com/jgraph/drawio">下载页面</a></p>
+<p>一款免费的在线图表编辑工具，可以用来编辑工作流，BPM, UML, ER 图，网络拓朴图等。</p>
+<hr>
+<h2 id="隐私安全">隐私安全</h2>
+<hr>
+<h3 id="bitwarden"><a href="https://bitwarden.com">Bitwarden</a></h3>
+<p>开源支持全平台的轻量级密码管理器，带有免费云同步。</p>
+<h3 id="ccleaner">CCleaner</h3>
+<p><a href="https://www.piriform.com/CCLEANER">官网</a>｜<a href="https://www.piriform.com/ccleaner/download/standard">下载页面</a></p>
+<p>免费的系统优化和隐私保护工具（非开源）。主要用来清除 Windows 系统不再使用的垃圾文件，上网记录等。屡获殊荣</p>
+<h3 id="keepass">KeePass</h3>
+<p><a href="http://keepass.info/">官网</a>｜<a href="http://keepass.info/download.html">下载页面</a></p>
+<p>免费的开源密码管理器，KeePass 密码存储在一个加密数据库中。</p>
+<h3 id="sandboxie">Sandboxie</h3>
+<p><a href="https://sandboxie-plus.com/sandboxie/">官网</a>｜<a href="https://github.com/sandboxie-plus/Sandboxie/releases">下载页面</a></p>
+<p>基于沙盒的隔离软件，可以将程序放入沙盘运行，这样它所创建修改删除的所有文件和注册表都会被虚拟化重定向，避免对系统关键部位进行改动破坏系统。</p>
+<hr>
+<h2 id="系统增强">系统增强</h2>
+<hr>
+<h3 id="傲梅分区助手">傲梅分区助手</h3>
+<p><a href="http://www.disktool.cn/">官网</a>｜<a href="http://www.disktool.cn/download.html">下载页面</a></p>
+<p>无损分区工具，提供简单、易用的磁盘分区管理操作</p>
+<h3 id="dism"><a href="https://github.com/Chuyu-Team/Dism-Multi-language">Dism++</a></h3>
+<p>全球首家基于 CBS 的 Dism GUI 实现</p>
+<h3 id="ditto"><a href="https://sourceforge.net/projects/ditto-cp/">Ditto</a></h3>
+<p>剪贴板管理</p>
+<h3 id="iobit-uninstaller">Iobit Uninstaller</h3>
+<p><a href="http://www.iobit.com/en/advanceduninstaller.php#">官网</a>｜<a href="http://download.cnet.com/IObit-Uninstaller/3001-2096_4-75161625.html?hasJs=n&amp;part=dl-">下载页面</a></p>
+<p>不留残余地彻底卸载已安装软件</p>
+<h3 id="trafficmonitor"><a href="https://github.com/zhongyang219/TrafficMonitor">TrafficMonitor</a></h3>
+<p>用于显示当前网速、CPU 及内存利用率的桌面悬浮窗软件，并支持任务栏显示和更换皮肤</p>
+<hr>
+<h2 id="终端调试">终端调试</h2>
+<hr>
+<h3 id="mobaxterm">MobaXterm</h3>
+<p><a href="http://mobaxterm.mobatek.net/">官网</a>｜<a href="http://mobaxterm.mobatek.net/download-home-edition.html">下载页面</a></p>
+<p>具备 Xserver 并标签化的 SSH 客户端</p>
+<h3 id="putty"><a href="http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html">Putty</a></h3>
+<p>SSH 与 telnet 客户端</p>
+<h3 id="winscp">WinSCP</h3>
+<p><a href="https://winscp.net/eng/docs/lang:chs">官网</a>｜<a href="https://winscp.net/eng/docs/lang:chs#%E4%B8%8B%E8%BD%BD">下载页面</a></p>
+<p>免费开源的 SFTP/FTP/WebDAV/SCP 客户端</p>
+<h3 id="xshell">Xshell</h3>
+<p><a href="https://www.xshell.com/zh/xshell/">官网</a>｜<a href="https://www.xshell.com/zh/xshell-download/">下载页面</a></p>
+<p>强大终端工具，支持 SSH SFTP TELNET RLOGIN 与 SERIAL</p>
+<hr>
+<h2 id="文本编辑器">文本编辑器</h2>
+<hr>
+<h3 id="atom">Atom</h3>
+<p><a href="https://atom.io/">官网</a>｜<a href="https://github.com/atom/atom/releases">下载页面</a></p>
+<p>可扩展的文本编辑器</p>
+<h3 id="emeditor">EmEditor</h3>
+<p><a href="https://www.emeditor.com">官网</a>｜<a href="https://www.emeditor.com/download/">下载页面</a></p>
+<p>支持宏，Unicode，可处理大数据以及 CSV 文件的文本编辑器</p>
+<h3 id="notepad2-mod"><a href="https://xhmikosr.github.io/notepad2-mod/">Notepad2-mod</a></h3>
+<p>Notepad2的分支之一，可替换系统 notepad 的轻量级开源编辑器，支持语法高亮等功能</p>
+<h3 id="typora"><a href="https://typora.io/">Typora</a></h3>
+<p>简洁 MarkDown 阅读编写应用</p>
+<hr>
+<h2 id="视频工具">视频工具</h2>
+<hr>
+<h3 id="handbrake"><a href="http://handbrake.fr/">HandBrake</a></h3>
+<p>UI 优美、性能优秀的视频编码工具</p>
+<h3 id="losslesscut"><a href="https://github.com/mifi/lossless-cut">LosslessCut</a></h3>
+<p>跨平台视频音频文件剪辑工具，使用 GUI 封装 ffmpeg</p>
+<h3 id="mpv_lazy"><a href="https://github.com/hooke007/MPV_lazy">MPV_lazy</a></h3>
+<p>基于开源跨平台媒体播放器mpv的懒人包配置版</p>
+<h3 id="obs-studio"><a href="https://obsproject.com/">OBS Studio</a></h3>
+<p>屏幕录制或生成直播媒体流</p>
+<h3 id="jellyfin">Jellyfin</h3>
+<p><a href="https://jellyfin.org/">官网</a>｜<a href="https://jellyfin.org/downloads/">下载页面</a></p>
+<p>Jellyfin 是一个自由的软件媒体系统，用于控制和管理媒体和流媒体。它通过多个应用程序从专用服务器向终端用户设备提供媒体，属于 Emby 3.5.2 的下一代，并移植  .NET 核心框架，以支持完全的跨平台支持。</p>
+<h3 id="zyplayer"><a href="https://github.com/Hiram-Wong/ZyPlayer">ZyPlayer</a></h3>
+<p>新名称zyfun，跨平台桌面端视频资源播放器,免费高颜值，添加源后可以无限制看各种影视资源。</p>
+<h3 id="kazumi"><a href="https://github.com/Predidit/Kazumi">Kazumi</a></h3>
+<p>基于自定义规则的番剧采集APP，支持流媒体在线观看，支持弹幕。</p>
+<h3 id="potplayer"><a href="https://potplayer.daum.net/">PotPlayer</a></h3>
+<p>多媒体播放器，解码器众多，配置能力强<br>
+⚠<a href="https://github.com/FFmpeg/web/blob/master/src/shame#L63">违反 FFmpeg 公共许可证</a></p>
+<h3 id="shotcut">Shotcut</h3>
+<p><a href="https://www.shotcut.org/">官网</a>｜<a href="https://www.shotcut.org/download/">下载页面</a></p>
+<p>少见的功能强大而且还开源的视频编辑工具</p>
+<h3 id="tinymediamanager">tinyMediaManager</h3>
+<p><a href="http://www.tinymediamanager.org/">官网</a>｜<a href="http://www.tinymediamanager.org/download/">下载页面</a></p>
+<p>电影电视剧管理工具，支持自动下载影片信息、字幕、标记已观看、同步 Trakt.tv 等功能</p>
+<h3 id="vlc"><a href="http://www.videolan.org/vlc/index.html">VLC</a></h3>
+<p>免费开源多媒体播放器与框架，可播放DVD 音频CD VCD与多种流协议</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[本地音乐播放器foobar2000+foobox 美化界面]]></title>
+        <id>https://frazy8.github.io/post/ben-di-yin-le-bo-fang-qi-foobar2000foobox-mei-hua-jie-mian/</id>
+        <link href="https://frazy8.github.io/post/ben-di-yin-le-bo-fang-qi-foobar2000foobox-mei-hua-jie-mian/">
+        </link>
+        <updated>2024-12-09T04:34:15.000Z</updated>
+        <content type="html"><![CDATA[<p>foobar2000 是一个 Windows 平台下的高级音频播放器，支持多种音频格式播放和转换及第三方组件扩展。foobox 是基于 foobar2000 汉化版(当前版本 1.6.2)的 CUI 界面配置。</p>
+<p><a href="https://github.com/dream7180/foobox-cn">foobox项目主页</a><br>
+<a href="https://www.cnblogs.com/asionwu/p/18449026">foobar2000 v2.1.6 汉化版主页</a></p>
+<p>安装完foobar2000汉化版后，在相同路径安装foobox即可，具体可参考以下动图<br>
+<img src="https://frazy8.github.io/post-images/1733719371604.gif" alt="" loading="lazy"></p>
+<p>软件效果：<br>
+<img src="https://frazy8.github.io/post-images/1733720776830.png" alt="" loading="lazy"></p>
+<p>如果mp3标签不完整导致显示信息缺失，也可以用<a href="https://www.cnblogs.com/vinlxc/p/11347744.html">MusicTag</a>这个软件补全，可以从国内各大音乐网站拉取到各种音乐标签信息补全。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[RIME输入法+白霜词库配置]]></title>
+        <id>https://frazy8.github.io/post/rime-shu-ru-fa-bai-shuang-ci-ku-pei-zhi/</id>
+        <link href="https://frazy8.github.io/post/rime-shu-ru-fa-bai-shuang-ci-ku-pei-zhi/">
+        </link>
+        <updated>2024-12-08T05:30:24.000Z</updated>
+        <content type="html"><![CDATA[<p>由于受够了国内输入法的隐私上传和广告烦恼，所以想找个纯粹点的输入法。RIME以前也尝试过，第一观感是难看且配置麻烦，最近看到有开源词库适配RIME，基本可以达到开箱即用，遂再次试用。</p>
+<p>Rime主打隐私保护、跨平台的“极客向”开源输入法，Windows版叫小狼毫，MacOS版叫鼠须管。Rime通过非联网词库和词频记录算法达到越用越顺手的效果。</p>
+<p>Rime官网：<a href="https://rime.im">https://rime.im</a>，<a href="https://github.com/rime/weasel/releases/latest">下载链接</a><br>
+白霜词库GitHub发布页：<a href="https://github.com/gaboolic/rime-frost/releases">https://github.com/gaboolic/rime-frost/releases</a></p>
+<p><strong>Windows使用说明</strong></p>
+<ol>
+<li>
+<p>下载并安装Rime输入法安装包，成功后在右下角小图标打开“用户文件夹”，下载完整的<a href="https://github.com/gaboolic/rime-frost/archive/refs/heads/master.zip">白霜词库zip包</a>，解压后直接将所有文件复制进这个目录，之后如要更新，再次下载zip包解压后覆盖即可；</p>
+</li>
+<li>
+<p>右键rime图标，点击“重新部署”并等待提示消失；</p>
+</li>
+<li>
+<p>右键rime图标，点击“输入法设定”，勾选“白霜拼音”，如果需要双拼输入方案，同时勾选你所需的双拼（如：小鹤双拼），选择“中”确认，最后选择一个你喜欢的皮肤；</p>
+</li>
+<li>
+<p>切换Rime输入法，按f4进入「方案选单」，选择“白霜拼音”或你所需的双拼方案，并按需修改简繁体、有无emoji等设置；</p>
+</li>
+<li>
+<p>个性化配置主题皮肤</p>
+</li>
+</ol>
+<p>在用户文件夹找到weasel.custom.yaml编辑</p>
+<pre><code>patch:
+  &quot;style/color_scheme&quot;: psionics #配色方案
+  &quot;style/font_face&quot;: &quot;霞鹜文楷&quot; #字体
+  &quot;style/font_point&quot;: 14           #字体大小
+  &quot;style/inline_preedit&quot;: true     # 嵌入式候选窗单行显示
+  &quot;style/horizontal&quot;: true         #候选词横排
+  &quot;style/display_tray_icon&quot; : false #显示托盘图标，建议false，否则出现两个图标
+</code></pre>
+<p>修改候选词个数，编辑用户文件夹的default.custom.yaml</p>
+<pre><code>patch:
+  menu/page_size: 8
+</code></pre>
+<ol start="6">
+<li>完成了，开始享受打字。</li>
+</ol>
+<p>PS：安卓也有了一款基于Rime定制开发的输入法，<a href="https://github.com/gurecn/YuyanIme">雨燕拼音输入法</a>，一样好用。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Github+Gridea部署个人网站]]></title>
+        <id>https://frazy8.github.io/post/hello-gridea/</id>
+        <link href="https://frazy8.github.io/post/hello-gridea/">
+        </link>
+        <updated>2024-12-07T11:16:10.000Z</updated>
+        <summary type="html"><![CDATA[<p><strong>Gridea</strong> 一个静态博客写作客户端,，使用<strong>Markdown</strong> 语法可以进行快速创作。你可以用它来记录你的生活、心情、知识、笔记、创意...</p>
+]]></summary>
+        <content type="html"><![CDATA[<p><strong>Gridea</strong> 一个静态博客写作客户端,，使用<strong>Markdown</strong> 语法可以进行快速创作。你可以用它来记录你的生活、心情、知识、笔记、创意...</p>
+<!-- more -->
+<p><a href="https://github.com/getgridea/gridea">Github主页</a></p>
+<p><strong>搭建步骤</strong></p>
+<h1 id="1-准备好相关信息">1、准备好相关信息</h1>
+<p>提前注册好好<a href="https://github.com/"><strong>Github</strong></a>帐号并安装<a href="https://github.com/getgridea/gridea"><strong>Gridea</strong></a>客户端；</p>
+<!-- more -->
+<h1 id="2-创建github仓库">2、创建GitHub仓库</h1>
+<p>点击此链接后按下图新建仓库<a href="https://github.com/new">https://github.com/new</a><br>
+<img src="https://frazy8.github.io/post-images/1733641027988.png" alt="" loading="lazy"></p>
+<!-- more -->
+<h1 id="3-创建token与oauth-apps">3、创建token与OAuth Apps</h1>
+<p>点击此链接后按下图创建token并记录下来 <a href="https://github.com/settings/tokens/new">https://github.com/settings/tokens/new</a><br>
+<img src="https://frazy8.github.io/post-images/1733641514129.png" alt="" loading="lazy"></p>
+<p>点击此链接后按下图注册OAuth Apps <a href="https://github.com/settings/applications/new">https://github.com/settings/applications/new</a><br>
+<img src="https://frazy8.github.io/post-images/1733758723457.png" alt="" loading="lazy"><br>
+完成后得到如下ID和secrets记录下来<br>
+<img src="https://frazy8.github.io/post-images/1733758957797.png" alt="" loading="lazy"></p>
+<!-- more -->
+<h1 id="4-配置gridea客户端">4、配置Gridea客户端</h1>
+<p>基础配置：<br>
+<img src="https://frazy8.github.io/post-images/1733642144603.png" alt="" loading="lazy"></p>
+<p>评论配置：<br>
+<img src="https://frazy8.github.io/post-images/1733759219470.png" alt="" loading="lazy"></p>
+<!-- more -->
+<h1 id="5-发布并验证">5、发布并验证</h1>
+<p>接下来就可以用Gridea创建并发布文章了，评论功能也已开启，同步成功后稍等几分钟，在浏览器地址栏输入网址https://你的id.github.io 或者点击Gridea客户端左下角的地球图标，就可以访问网站了。</p>
+<p>😘 Enjoy~</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[LG G7 刷机记录]]></title>
+        <id>https://frazy8.github.io/post/lg-g7-shua-ji-ji-lu/</id>
+        <link href="https://frazy8.github.io/post/lg-g7-shua-ji-ji-lu/">
+        </link>
+        <updated>2019-10-10T10:55:46.000Z</updated>
+        <content type="html"><![CDATA[<p>lgbbs可以查询IMEI对应的出厂日期、机型、颜色、区域等信息</p>
+<p><a href="http://www.lgbbs.com/plugin.php?id=lg_mobile&amp;imei">http://www.lgbbs.com/plugin.php?id=lg_mobile</a></p>
+<p>获取你的手机的IMEI可以在拨号盘里面输入，即可获取IMEI码</p>
+<p><code>*#06#</code></p>
+<p><strong>版本列表</strong><br>
+<img src="https://frazy8.github.io/post-images/1733656323110.png" alt="" loading="lazy"></p>
+<p>版本号分为三个部分 <code>G710EM</code> <code>20</code> <code>b</code></p>
+<ul>
+<li><code>G710EM</code>代表适用于该固件的设备版本，可以到<a href="https://g7.lge.fun/guide/v.md">版本列表</a>查看详细。</li>
+<li><code>20</code>代表该设备的第二个Android版本，用G7举例，如果为<code>10</code>则是Oreo,<code>30</code>则是Q。</li>
+<li><code>b</code>是LMG710EM20里面第b个更新，拿LMG710N举例，20g比20f更加新，20f比20c新。</li>
+</ul>
+<p>NO20x N20x的区别主要在两个方面</p>
+<ul>
+<li>预装应用NO是韩国全网通版本的型号，相对于N来说更加的简洁，N多了很多的“垃圾预装软件”。</li>
+<li>信号据G7玩家们的反应 G710N00x 00 <code>KT</code> OP.kdz的信号比NO更好，<code>LGU</code>最垃圾。</li>
+</ul>
+<p>ROM下载，我下载的是G710NO30g_00_OPEN_KR_OP_0122.kdz</p>
+<p><a href="https://lg-firmwares.com/android-10-q/">https://lg-firmwares.com/android-10-q/</a></p>
+<p>混刷教程开始</p>
+<p><a href="https://g7.lge.fun/guide/mix.html">https://g7.lge.fun/guide/mix.html</a></p>
+<p>本教程适用于任何所有G7，<strong>除了没有ROOT的T版</strong> !刷了你就死了。<strong>什么版本都可以刷</strong>，但是没有ROOT过的T版不可以刷。⚠请不要在刷机过程中断开连接。⚠</p>
+<p><strong>已知bug</strong></p>
+<p>韩版刷入欧版</p>
+<pre><code>无法达到无缝更新效果，取消勾选userdata将会出现一些问题；
+wifi无法正常使用。
+
+</code></pre>
+<h1 id="step0-准备的东西"><strong>Step.0 准备的东西</strong></h1>
+<ul>
+<li>LG UP 1.14.3破解版和LG驱动LGMobileDriver_WHQL_Ver_4.4.2</li>
+<li>ADB工具箱</li>
+<li>一个要刷的KDZ，也就是ROM文件</li>
+<li>Root玩家准备好要刷的KDZ的Rooted Boot，可以自己解包后patch。<br>
+KDZTools解包KDZ文件后能获取到boot_a.image，拷贝至手机。在手机上使用magisk点击安装，选择并修补一个文件，修补完成后在Download文件夹即可看到patched的img文件，拷贝到电脑备用。</li>
+</ul>
+<p>按正常步骤安装完软件，覆盖破解文件即可</p>
+<h1 id="step1-root玩家先刷好rooted-boot-不需要root权限可跳过"><strong>Step.1 Root玩家先刷好Rooted Boot （不需要root权限可跳过）</strong></h1>
+<p>一般混刷后都没有Fastboot模式，也刷不了Rooted Boot，所以要在刷机前刷入对应的KDZ的Rooted Boot，当然也可以不刷，看情况，<strong>Root只是附加项，不是必须的！</strong>*</p>
+<p>手机上安装TERMUX，并删除laf_a</p>
+<p>这里的坑是TERMUX可能装不上，报错如下：</p>
+<pre><code>Ubable to install
+Termux was unable to install the bootstrap packages.
+Check your network connection and try again.
+</code></pre>
+<p>可以科学上网然后在谷歌Play商店中完整安装</p>
+<p>安装好后执行以下命令清理laf_a</p>
+<pre><code class="language-bash">su
+dd if=/dev/zero/ of=/dev/block/platform/soc/1d84000.ufshc/by-name/laf_a
+</code></pre>
+<p>已删除laf分区:关机状态下按住音量+后插入电源线即可进入Fastboot。</p>
+<p>在电脑的ADB工具目录进入cmd，执行以下命令刷入<strong>Rooted Boot</strong></p>
+<pre><code class="language-bash">fastboot flash boot_a C:\G7\magisk_patched-23000_F0NkR.img
+fastboot flash boot_b C:\G7\magisk_patched-23000_F0NkR.img
+</code></pre>
+<p>激活到laf_b，使手机可进入download模式</p>
+<pre><code class="language-bash">fastboot set_active b
+</code></pre>
+<h1 id="step2-将手机整进download模式"><strong>Step.2 将手机整进Download模式</strong></h1>
+<p>完全关闭手机后按住音量上（音量加） 插入数据线</p>
+<h1 id="step3-打开lg-up"><strong>Step.3 打开LG UP</strong></h1>
+<p>打开LG UP后应该是这样子的，可以从上到下分为四个板块，设备列表、Process、File Path和两个区域。</p>
+<figure data-type="image" tabindex="1"><img src="https://frazy8.github.io/post-images/1733655792047.png" alt="" loading="lazy"></figure>
+<h1 id="step41-process板块选择partition-dl"><strong>Step.4.1 Process板块选择PARTITION DL</strong></h1>
+<h2 id="step42-把kdz拖进file-path板块"><strong>Step.4.2 把KDZ拖进File Path板块</strong></h2>
+<h2 id="step-43-点击下方的start按钮"><strong>Step 4.3 点击下方的Start按钮</strong></h2>
+<h1 id="step5-lg-up运行了一下后会跳出一个选择页面"><strong>Step.5 LG UP运行了一下后会跳出一个选择页面</strong></h1>
+<p><strong>点击Select All</strong></p>
+<p>如果你在刷入之前刷有boot</p>
+<pre><code>取消勾选 boot_a,boot_b
+
+</code></pre>
+<p>如果你在刷入之前删除了laf_a，并且你想保存已经删除好了的 laf_a。</p>
+<pre><code>取消勾选 laf_a
+
+</code></pre>
+<p>如果你想不清数据达到类似于“OTA无缝更新”之类的效果</p>
+<pre><code>取消勾选 userdata
+
+</code></pre>
+<p><strong>点击ok</strong></p>
+<p>就开始刷入了</p>
+<p>混刷过程大概三分钟左右。</p>
+]]></content>
+    </entry>
+</feed>
