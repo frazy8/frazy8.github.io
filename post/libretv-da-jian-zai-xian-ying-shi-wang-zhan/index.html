@@ -1,0 +1,279 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>LibreTV搭建在线影视网站 | Frazy记录站</title>
+<link rel="shortcut icon" href="https://frazy8.github.io/favicon.ico?v=1758256087072">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="https://frazy8.github.io/styles/main.css">
+<link rel="alternate" type="application/atom+xml" title="LibreTV搭建在线影视网站 | Frazy记录站 - Atom Feed" href="https://frazy8.github.io/atom.xml">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+
+
+
+    <meta name="description" content="项目简介
+Github高热度开源项目LibreTV，是一个轻量级、免费的在线视频搜索与观看平台，提供来自多个视频源的内容搜索与播放服务。无需注册，即开即用，可以直接部署到Netlify、Cloudflare、Vercel或者Docker等平..." />
+    <meta name="keywords" content="影音,在线,LibreTV,GitHub,开源" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+    <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.5.1/build/highlight.min.js"></script>
+  </head>
+  <body>
+    <div class="main">
+      <div class="main-content">
+        <div class="site-header">
+  <a href="https://frazy8.github.io">
+  <img class="avatar" src="https://frazy8.github.io/images/avatar.png?v=1758256087072" alt="">
+  </a>
+  <h1 class="site-title">
+    Frazy记录站
+  </h1>
+  <p class="site-description">
+    温故而知新
+  </p>
+  <div class="menu-container">
+    
+      
+        <a href="/" class="menu">
+          首页
+        </a>
+      
+    
+      
+        <a href="/archives" class="menu">
+          归档
+        </a>
+      
+    
+      
+        <a href="/tags" class="menu">
+          标签
+        </a>
+      
+    
+      
+        <a href="/post/about" class="menu">
+          关于
+        </a>
+      
+    
+  </div>
+  <div class="social-container">
+    
+      
+        <a href="https://github.com/caifeng250" target="_blank">
+          <i class="ri-github-line"></i>
+        </a>
+      
+    
+      
+    
+      
+        <a href="https://weibo.com/u/1691109721" target="_blank">
+          <i class="ri-weibo-line"></i>
+        </a>
+      
+    
+      
+        <a href="https://www.zhihu.com/people/frazy-cai" target="_blank">
+          <i class="ri-zhihu-line"></i>
+        </a>
+      
+    
+      
+    
+  </div>
+</div>
+
+        <div class="post-detail">
+          <article class="post">
+            <h2 class="post-title">
+              LibreTV搭建在线影视网站
+            </h2>
+            <div class="post-info">
+              <span>
+                2025-05-28
+              </span>
+              <span>
+                2 min read
+              </span>
+              
+                <a href="https://frazy8.github.io/tag/2N71MD12Ex/" class="post-tag">
+                  # 影音
+                </a>
+              
+                <a href="https://frazy8.github.io/tag/DfN7RSgKw7L/" class="post-tag">
+                  # 在线
+                </a>
+              
+                <a href="https://frazy8.github.io/tag/sFbdFmXwtC9/" class="post-tag">
+                  # LibreTV
+                </a>
+              
+                <a href="https://frazy8.github.io/tag/Kmxe6V3D6vx/" class="post-tag">
+                  # GitHub
+                </a>
+              
+                <a href="https://frazy8.github.io/tag/cdg4pB-pmdF/" class="post-tag">
+                  # 开源
+                </a>
+              
+            </div>
+            
+              <img class="post-feature-image" src="https://frazy8.github.io/post-images/libretv-da-jian-zai-xian-ying-shi-wang-zhan.png" alt="">
+            
+            <div class="post-content-wrapper">
+              <div class="post-content" v-pre>
+                <h2 id="项目简介">项目简介</h2>
+<p>Github高热度开源项目LibreTV，是一个轻量级、免费的在线视频搜索与观看平台，提供来自多个视频源的内容搜索与播放服务。无需注册，即开即用，可以直接部署到Netlify、Cloudflare、Vercel或者Docker等平台。</p>
+<p>项目主页：<a href="https://github.com/LibreSpark/LibreTV">https://github.com/LibreSpark/LibreTV</a></p>
+<h2 id="快速部署">快速部署</h2>
+<p>首先准备<a href="https://www.cloudflare-cn.com/">Cloudflare</a>账号、<a href="https://github.com/">Github</a>账号，可自行到官网注册。</p>
+<ul>
+<li>1、Fork 或克隆LibreTV仓库到自己的 GitHub 账户</li>
+</ul>
+<p><a href="https://github.com/LibreSpark/LibreTV">https://github.com/LibreSpark/LibreTV</a></p>
+<figure data-type="image" tabindex="1"><img src="https://s2.loli.net/2025/05/23/QdT4cgYE5I8XMKu.png" alt="" loading="lazy"></figure>
+<figure data-type="image" tabindex="2"><img src="https://s2.loli.net/2025/05/23/wuOfUYvhjor83px.png" alt="" loading="lazy"></figure>
+<ul>
+<li>2、登录<a href="https://dash.cloudflare.com/">Cloudflare后台</a>，进入 Pages 服务</li>
+</ul>
+<p>选择 计算(Workers) -&gt; Workers和Pages -&gt; 创建Pages -&gt; 导入现有 Git 存储库。</p>
+<figure data-type="image" tabindex="3"><img src="https://s2.loli.net/2025/05/23/C3XAQZTYLzUwbP9.png" alt="" loading="lazy"></figure>
+<ul>
+<li>
+<p>3、将Github账户和Cloudflare进行关联，然后会显示刚Fork的项目。<br>
+<img src="https://s2.loli.net/2025/05/28/eo4wa3rNIQ1DGSu.png" alt="" loading="lazy"></p>
+</li>
+<li>
+<p>4、其他设置不动，建议环境变量添加PASSWORD并设置密码，以控制访问权限规避版权</p>
+</li>
+</ul>
+<figure data-type="image" tabindex="4"><img src="https://s2.loli.net/2025/05/28/iI1N95CjEV7SGet.png" alt="" loading="lazy"></figure>
+<ul>
+<li>5、保存并部署，之后Cloudflare会自动分配一个域名，浏览器直接访问即可。</li>
+</ul>
+<h2 id="使用效果">使用效果</h2>
+<figure data-type="image" tabindex="5"><img src="https://s2.loli.net/2025/05/28/fB8oG24xcPAHtwu.png" alt="" loading="lazy"></figure>
+<p>打开网站后建议点击右上角的设置按钮，把所有源都勾选上，黄色过滤按钮打开。</p>
+<h2 id="其他事项">其他事项</h2>
+<ul>
+<li>此教程仅演示Cloudflare的部署方法，你也可以部署到Netlify、Vercel等其他平台，包括本地NAS也可以通过Docker部署，具体步骤可参考官方教程。</li>
+<li>播放器支持以下键盘快捷键：</li>
+</ul>
+<blockquote>
+<p><strong>空格键</strong>: 播放/暂停<br>
+<strong>左右箭头</strong>: 快退/快进<br>
+<strong>上下箭头</strong>: 音量增加/减小<br>
+<strong>M 键</strong>: 静音/取消静音<br>
+<strong>F 键</strong>: 全屏/退出全屏<br>
+<strong>Esc 键</strong>: 退出全屏</p>
+</blockquote>
+<ul>
+<li>所有视频均来自第三方 API 接口提供的搜索结果，如有侵权内容，请联系相应的内容提供方。</li>
+<li>同类型的开源影视聚合平台还有<a href="https://github.com/senshinya/MoonTV">MoonTV</a>，部署方式大同小异，具体请查看官方教程。</li>
+</ul>
+
+              </div>
+              <div class="toc-container">
+                <ul class="markdownIt-TOC">
+<li>
+<ul>
+<li><a href="#%E9%A1%B9%E7%9B%AE%E7%AE%80%E4%BB%8B">项目简介</a></li>
+<li><a href="#%E5%BF%AB%E9%80%9F%E9%83%A8%E7%BD%B2">快速部署</a></li>
+<li><a href="#%E4%BD%BF%E7%94%A8%E6%95%88%E6%9E%9C">使用效果</a></li>
+<li><a href="#%E5%85%B6%E4%BB%96%E4%BA%8B%E9%A1%B9">其他事项</a></li>
+</ul>
+</li>
+</ul>
+
+              </div>
+            </div>
+          </article>
+        </div>
+
+        
+          <div class="next-post">
+            <div class="next">下一篇</div>
+            <a href="https://frazy8.github.io/post/hackintosh-hei-ping-guo-an-zhuang/">
+              <h3 class="post-title">
+                Hackintosh黑苹果安装
+              </h3>
+            </a>
+          </div>
+        
+
+        
+          
+            <!--评论显示区，请插入合适的位置-->
+<div id="comment"></div>
+<!--Leancloud 操作库:-->
+<script src="//cdn1.lncld.net/static/js/3.6.1/av-min.js"></script>
+<!--Valine 的核心代码库-->
+<script src="//cdn.jsdelivr.net/npm/valine@1.4.4/dist/Valine.min.js"></script>
+<script>
+    new Valine({
+        el:'#comment',
+        appId: 'kx1ilB514vrTQSqtVSUAlbeZ-gzGzoHsz',
+        appKey: '41E5mt2HDKt6Vb4xRnPCNDJ4',
+        placeholder: 'ヾ?≧?≦)o快来评论一下吧!',
+        avatar:'', 
+        visitor: true
+    });
+</script>
+          
+
+          
+        
+
+        <div class="site-footer">
+  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
+  <a class="rss" href="https://frazy8.github.io/atom.xml" target="_blank">
+    <i class="ri-rss-line"></i> RSS
+  </a>
+</div>
+
+      </div>
+    </div>
+
+    <script>
+      hljs.initHighlightingOnLoad()
+
+      let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
+
+      // This should probably be throttled.
+      // Especially because it triggers during smooth scrolling.
+      // https://lodash.com/docs/4.17.10#throttle
+      // You could do like...
+      // window.addEventListener("scroll", () => {
+      //    _.throttle(doThatStuff, 100);
+      // });
+      // Only not doing it here to keep this Pen dependency-free.
+
+      window.addEventListener("scroll", event => {
+        let fromTop = window.scrollY;
+
+        mainNavLinks.forEach((link, index) => {
+          let section = document.getElementById(decodeURI(link.hash).substring(1));
+          let nextSection = null
+          if (mainNavLinks[index + 1]) {
+            nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
+          }
+          if (section.offsetTop <= fromTop) {
+            if (nextSection) {
+              if (nextSection.offsetTop > fromTop) {
+                link.classList.add("current");
+              } else {
+                link.classList.remove("current");    
+              }
+            } else {
+              link.classList.add("current");
+            }
+          } else {
+            link.classList.remove("current");
+          }
+        });
+      });
+
+    </script>
+  </body>
+</html>

@@ -1,0 +1,309 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>小米电视去广告与更换桌面 | Frazy记录站</title>
+<link rel="shortcut icon" href="https://frazy8.github.io/favicon.ico?v=1758256087072">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="https://frazy8.github.io/styles/main.css">
+<link rel="alternate" type="application/atom+xml" title="小米电视去广告与更换桌面 | Frazy记录站 - Atom Feed" href="https://frazy8.github.io/atom.xml">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+
+
+
+    <meta name="description" content="过年回家看到老家用的小米电视，原生桌面和开机广告实在烦人，查询了一下调整方法，特此分享。理论上适用于所有小米电视&amp;小米盒子。
+电视设置
+开启开发者模式：设置-关于-产品型号-遥控连续按5下OK键；
+设备安全设置：设置-账号与安全-允..." />
+    <meta name="keywords" content="小米,电视,去广告" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+    <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.5.1/build/highlight.min.js"></script>
+  </head>
+  <body>
+    <div class="main">
+      <div class="main-content">
+        <div class="site-header">
+  <a href="https://frazy8.github.io">
+  <img class="avatar" src="https://frazy8.github.io/images/avatar.png?v=1758256087072" alt="">
+  </a>
+  <h1 class="site-title">
+    Frazy记录站
+  </h1>
+  <p class="site-description">
+    温故而知新
+  </p>
+  <div class="menu-container">
+    
+      
+        <a href="/" class="menu">
+          首页
+        </a>
+      
+    
+      
+        <a href="/archives" class="menu">
+          归档
+        </a>
+      
+    
+      
+        <a href="/tags" class="menu">
+          标签
+        </a>
+      
+    
+      
+        <a href="/post/about" class="menu">
+          关于
+        </a>
+      
+    
+  </div>
+  <div class="social-container">
+    
+      
+        <a href="https://github.com/caifeng250" target="_blank">
+          <i class="ri-github-line"></i>
+        </a>
+      
+    
+      
+    
+      
+        <a href="https://weibo.com/u/1691109721" target="_blank">
+          <i class="ri-weibo-line"></i>
+        </a>
+      
+    
+      
+        <a href="https://www.zhihu.com/people/frazy-cai" target="_blank">
+          <i class="ri-zhihu-line"></i>
+        </a>
+      
+    
+      
+    
+  </div>
+</div>
+
+        <div class="post-detail">
+          <article class="post">
+            <h2 class="post-title">
+              小米电视去广告与更换桌面
+            </h2>
+            <div class="post-info">
+              <span>
+                2025-03-07
+              </span>
+              <span>
+                3 min read
+              </span>
+              
+                <a href="https://frazy8.github.io/tag/p-_yCZcKAr/" class="post-tag">
+                  # 小米
+                </a>
+              
+                <a href="https://frazy8.github.io/tag/0kIOMEqHxJQ/" class="post-tag">
+                  # 电视
+                </a>
+              
+                <a href="https://frazy8.github.io/tag/CA4H1aF3Utq/" class="post-tag">
+                  # 去广告
+                </a>
+              
+            </div>
+            
+              <img class="post-feature-image" src="https://frazy8.github.io/post-images/xiao-mi-dian-shi-qu-guang-gao-yu-geng-huan-zhuo-mian.png" alt="">
+            
+            <div class="post-content-wrapper">
+              <div class="post-content" v-pre>
+                <p>过年回家看到老家用的小米电视，原生桌面和开机广告实在烦人，查询了一下调整方法，特此分享。理论上适用于所有小米电视&amp;小米盒子。</p>
+<h2 id="电视设置">电视设置</h2>
+<pre><code>开启开发者模式：设置-关于-产品型号-遥控连续按5下OK键；
+设备安全设置：设置-账号与安全-允许安装未知来源的应用-允许ADB调试；
+查看网络IP：设置-关于-网络信息-找到并记录电视的IP地址。
+</code></pre>
+<h2 id="adb连接">ADB连接</h2>
+<h3 id="准备工具">准备工具</h3>
+<p>同一局域网电脑下载ADB Kits：<a href="https://adbshell.com/upload/adb.zip">https://adbshell.com/upload/adb.zip</a>解压后能看到adb.exe，在解压的当前目录右键打开CMD或者PowerShell终端。</p>
+<p>其他工具有：手机上安装 <a href="https://github.com/didjdk/adbhelper/releases">甲壳虫ADB</a>或者电脑上安装 <a href="https://www.123pan.com/s/vDX7Vv-npmNv.html">开心电视助手</a>。</p>
+<h3 id="连接电视">连接电视</h3>
+<p>使用以下命令连接电视,192.168.2.152 需要替换成上一步记录的小米电视IP，过程中电视会弹出待确认窗口，遥控确认即可。</p>
+<pre><code>adb connect 192.168.2.152
+</code></pre>
+<p>连接成功后可以查看设备状态</p>
+<pre><code>adb devices
+</code></pre>
+<h2 id="安装必要app">安装必要App</h2>
+<p>把当贝桌面或Emotn UI等等安卓apk包放在同一目录，执行以下命令便可安装软件到电视，电视端可能需要对一些弹窗进行确认。</p>
+<pre><code>adb install  .\软件包名.apk
+</code></pre>
+<h2 id="卸载无用app">卸载无用APP</h2>
+<p>卸载小米桌面 注意：卸载前请一定安装好当贝桌面或Emotn UI等第三方电视桌面app</p>
+<pre><code>adb shell pm uninstall --user 0 com.mitv.tvhome
+</code></pre>
+<p>去除开机广告服务的：</p>
+<pre><code>adb shell pm uninstall --user 0 mitv.service
+</code></pre>
+<p>为了避免日后更新被还原桌面，可以把系统更新删掉：</p>
+<pre><code>adb shell pm uninstall --user 0 com.xiaomi.mitv.upgrade
+</code></pre>
+<p>还有一些占内存且没有太大用处的内置APP也可以一并删除：</p>
+<p>删除广告插件</p>
+<pre><code>adb shell pm uninstall --user 0 com.miui.systemAdSolution
+</code></pre>
+<p>删除应用商店</p>
+<pre><code>adb shell pm uninstall --user 0 com.xiaomi.mitv.appstore
+</code></pre>
+<p>删除小米商城</p>
+<pre><code>adb shell pm uninstall --user 0 com.xiaomi.mitv.shop
+</code></pre>
+<p>删除游戏中心</p>
+<pre><code>adb shell pm uninstall --user 0 com.xiaomi.mibox.gamecenter
+</code></pre>
+<p>时尚画报</p>
+<pre><code>adb shell pm uninstall --user 0 com.xiaomi.tv.gallery
+</code></pre>
+<p>定时提醒</p>
+<pre><code>adb shell pm uninstall --user 0 com.mitv.alarmcenter
+</code></pre>
+<p>小米支付</p>
+<pre><code>adb shell pm uninstall --user 0 com.mitv.payment
+</code></pre>
+<p>电视支付</p>
+<pre><code>adb shell pm uninstall --user 0 com.mitv.pay
+</code></pre>
+<p>日历</p>
+<pre><code>adb shell pm uninstall --user 0 com.mitv.calendar
+</code></pre>
+<p>电视推送</p>
+<pre><code>adb shell pm uninstall --user 0 com.xiaomi.mitv.tvpush.tvpushservice
+</code></pre>
+<p>小米钱包</p>
+<pre><code>adb shell pm uninstall --user 0 com.mipay.wallt.tv
+</code></pre>
+<p>用户手册</p>
+<pre><code>adb shell pm uninstall --user 0 com.xiaomi.mitv.handbook
+</code></pre>
+<p>相册</p>
+<pre><code>adb shell pm uninstall --user 0 com.mitv.gallery
+</code></pre>
+<p>电视管家</p>
+<pre><code>adb shell pm uninstall --user 0 com.xiaomi.mitv.tvmanager
+</code></pre>
+<p>小米电视播放器</p>
+<pre><code>adb shell pm uninstall --user 0 com.mitv.mivideoplayer
+</code></pre>
+<p>小爱同学</p>
+<pre><code>adb shell pm uninstall  --user 0 com.xiaomi.voicecontrol
+</code></pre>
+
+              </div>
+              <div class="toc-container">
+                <ul class="markdownIt-TOC">
+<li>
+<ul>
+<li><a href="#%E7%94%B5%E8%A7%86%E8%AE%BE%E7%BD%AE">电视设置</a></li>
+<li><a href="#adb%E8%BF%9E%E6%8E%A5">ADB连接</a>
+<ul>
+<li><a href="#%E5%87%86%E5%A4%87%E5%B7%A5%E5%85%B7">准备工具</a></li>
+<li><a href="#%E8%BF%9E%E6%8E%A5%E7%94%B5%E8%A7%86">连接电视</a></li>
+</ul>
+</li>
+<li><a href="#%E5%AE%89%E8%A3%85%E5%BF%85%E8%A6%81app">安装必要App</a></li>
+<li><a href="#%E5%8D%B8%E8%BD%BD%E6%97%A0%E7%94%A8app">卸载无用APP</a></li>
+</ul>
+</li>
+</ul>
+
+              </div>
+            </div>
+          </article>
+        </div>
+
+        
+          <div class="next-post">
+            <div class="next">下一篇</div>
+            <a href="https://frazy8.github.io/post/nas-ruan-ying-jian-jie-shao/">
+              <h3 class="post-title">
+                NAS 软硬件介绍
+              </h3>
+            </a>
+          </div>
+        
+
+        
+          
+            <!--评论显示区，请插入合适的位置-->
+<div id="comment"></div>
+<!--Leancloud 操作库:-->
+<script src="//cdn1.lncld.net/static/js/3.6.1/av-min.js"></script>
+<!--Valine 的核心代码库-->
+<script src="//cdn.jsdelivr.net/npm/valine@1.4.4/dist/Valine.min.js"></script>
+<script>
+    new Valine({
+        el:'#comment',
+        appId: 'kx1ilB514vrTQSqtVSUAlbeZ-gzGzoHsz',
+        appKey: '41E5mt2HDKt6Vb4xRnPCNDJ4',
+        placeholder: 'ヾ?≧?≦)o快来评论一下吧!',
+        avatar:'', 
+        visitor: true
+    });
+</script>
+          
+
+          
+        
+
+        <div class="site-footer">
+  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
+  <a class="rss" href="https://frazy8.github.io/atom.xml" target="_blank">
+    <i class="ri-rss-line"></i> RSS
+  </a>
+</div>
+
+      </div>
+    </div>
+
+    <script>
+      hljs.initHighlightingOnLoad()
+
+      let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
+
+      // This should probably be throttled.
+      // Especially because it triggers during smooth scrolling.
+      // https://lodash.com/docs/4.17.10#throttle
+      // You could do like...
+      // window.addEventListener("scroll", () => {
+      //    _.throttle(doThatStuff, 100);
+      // });
+      // Only not doing it here to keep this Pen dependency-free.
+
+      window.addEventListener("scroll", event => {
+        let fromTop = window.scrollY;
+
+        mainNavLinks.forEach((link, index) => {
+          let section = document.getElementById(decodeURI(link.hash).substring(1));
+          let nextSection = null
+          if (mainNavLinks[index + 1]) {
+            nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
+          }
+          if (section.offsetTop <= fromTop) {
+            if (nextSection) {
+              if (nextSection.offsetTop > fromTop) {
+                link.classList.add("current");
+              } else {
+                link.classList.remove("current");    
+              }
+            } else {
+              link.classList.add("current");
+            }
+          } else {
+            link.classList.remove("current");
+          }
+        });
+      });
+
+    </script>
+  </body>
+</html>

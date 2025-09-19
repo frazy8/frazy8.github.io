@@ -1,0 +1,293 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>360 T7路由器折腾过程 | Frazy记录站</title>
+<link rel="shortcut icon" href="https://frazy8.github.io/favicon.ico?v=1758256087072">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="https://frazy8.github.io/styles/main.css">
+<link rel="alternate" type="application/atom+xml" title="360 T7路由器折腾过程 | Frazy记录站 - Atom Feed" href="https://frazy8.github.io/atom.xml">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+
+
+
+    <meta name="description" content="硬件简介
+360 T7是市面上的第一款MT7981运营商定制机，具有价格便宜（小黄鱼¥65左右）、信号强（远强于同价位其它垃圾高通和bcm方案）、可玩性高（可刷OpenWrt）的特点，无线规格是 ax3000，支持 160Mhz 频宽的 W..." />
+    <meta name="keywords" content="路由器,OpenWrt,刷机" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+    <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.5.1/build/highlight.min.js"></script>
+  </head>
+  <body>
+    <div class="main">
+      <div class="main-content">
+        <div class="site-header">
+  <a href="https://frazy8.github.io">
+  <img class="avatar" src="https://frazy8.github.io/images/avatar.png?v=1758256087072" alt="">
+  </a>
+  <h1 class="site-title">
+    Frazy记录站
+  </h1>
+  <p class="site-description">
+    温故而知新
+  </p>
+  <div class="menu-container">
+    
+      
+        <a href="/" class="menu">
+          首页
+        </a>
+      
+    
+      
+        <a href="/archives" class="menu">
+          归档
+        </a>
+      
+    
+      
+        <a href="/tags" class="menu">
+          标签
+        </a>
+      
+    
+      
+        <a href="/post/about" class="menu">
+          关于
+        </a>
+      
+    
+  </div>
+  <div class="social-container">
+    
+      
+        <a href="https://github.com/caifeng250" target="_blank">
+          <i class="ri-github-line"></i>
+        </a>
+      
+    
+      
+    
+      
+        <a href="https://weibo.com/u/1691109721" target="_blank">
+          <i class="ri-weibo-line"></i>
+        </a>
+      
+    
+      
+        <a href="https://www.zhihu.com/people/frazy-cai" target="_blank">
+          <i class="ri-zhihu-line"></i>
+        </a>
+      
+    
+      
+    
+  </div>
+</div>
+
+        <div class="post-detail">
+          <article class="post">
+            <h2 class="post-title">
+              360 T7路由器折腾过程
+            </h2>
+            <div class="post-info">
+              <span>
+                2023-12-23
+              </span>
+              <span>
+                3 min read
+              </span>
+              
+                <a href="https://frazy8.github.io/tag/72F1y6WfNN/" class="post-tag">
+                  # 路由器
+                </a>
+              
+                <a href="https://frazy8.github.io/tag/M5JmBG4etrd/" class="post-tag">
+                  # OpenWrt
+                </a>
+              
+                <a href="https://frazy8.github.io/tag/poxe5vpTUFl/" class="post-tag">
+                  # 刷机
+                </a>
+              
+            </div>
+            
+              <img class="post-feature-image" src="https://frazy8.github.io/post-images/360-t7-zhe-teng-guo-cheng.jpg" alt="">
+            
+            <div class="post-content-wrapper">
+              <div class="post-content" v-pre>
+                <h2 id="硬件简介">硬件简介</h2>
+<p>360 T7是市面上的第一款MT7981运营商定制机，具有价格便宜（小黄鱼¥65左右）、信号强（远强于同价位其它垃圾高通和bcm方案）、可玩性高（可刷OpenWrt）的特点，无线规格是 ax3000，支持 160Mhz 频宽的 Wi-Fi，其配置如下：</p>
+<ul>
+<li>CPU：MT7981B 双核A53 1.3GHz</li>
+<li>RAM：256M DDR3</li>
+<li>FLASH：128M SPI NAND</li>
+<li>无线phy：MT7976CN AX3000</li>
+<li>交换机：MT7531A 2xHSGMII</li>
+</ul>
+<p>拆机测评：<a href="https://www.acwifi.net/22217.html">https://www.acwifi.net/22217.html</a></p>
+<h2 id="刷机准备">刷机准备</h2>
+<ul>
+<li>1、360 T7 路由器</li>
+<li>2、一台带网口的 Windows 电脑，并安装好<a href="https://github.com/larryli/PuTTY">PuTTY</a></li>
+<li>3、USB 转 TTL 的模块，带杜邦线（淘宝几块钱）</li>
+<li>4、下载好 <a href="https://www.right.com.cn/forum/thread-8270615-1-1.html">openwrt 固件</a></li>
+</ul>
+<h2 id="开启telnet">开启Telnet</h2>
+<p>拆机<br>
+拧下底部两颗螺丝后撬开卡扣，塑料后盖卡口多且紧，小心用力拆开，然后找到下图红框内的UART串口。<code>线序由上到下为RXD、TXD、GND</code>，按顺序连上USB 转 TTL到电脑USB口，打开PuTTY连接串口，波特率为115200<br>
+<img src="https://s2.loli.net/2025/05/23/cVhlU4nTM72bEwg.jpg" alt="" loading="lazy"></p>
+<p>路由器上电后，不断按下键盘F 键并回车 ，直到进入路由器failsafe模式</p>
+<pre><code class="language-shell"># 开启uboot控制台菜单
+fw_setenv bootmenu_delay 3  
+
+# 挂载rootfs并开启telnet
+mount_root
+sed -i 's/.*local debug=.*/\tlocal debug=1/' /etc/init.d/telnet
+
+# 修改root密码
+passwd root
+
+# 重启
+reboot
+</code></pre>
+<h2 id="刷入uboot">刷入uboot</h2>
+<p>移除TTL工具正常启动路由器，路由器LAN口连接电脑、WAN口连接网络，因为后续需要从网络上获取 uboot 进行刷入；</p>
+<p>打开PuTTY选择telnet连接，360 T7路由器默认后台IP <code>192.168.2.1</code>、端口 <code>23</code>、用户名 <code>root</code>  密码是上一步设置的</p>
+<pre><code class="language-shell">cd /tmp
+wget https://raw.githubusercontent.com/caifeng250/share/refs/heads/main/mt7981_360t7-fip-fixed-parts.bin
+mtd write mt7981_360t7-fip-fixed-parts.bin fip
+</code></pre>
+<p>等待uboot写入完成。</p>
+<h2 id="刷入固件">刷入固件</h2>
+<p>断开路由器电源，网线保持与电脑连接，用回形针或牙签等工具按住路由器复位口不放，接通路由器电源，等待10秒左右放开，进入UBOOT后台<br>
+由于uboot没有DHCP，所以需要打开电脑网络设置，手动修改网卡信息</p>
+<blockquote>
+<p>IP地址：192.168.1.10<br>
+子网掩码：255.255.255.0<br>
+网关：192.168.1.1</p>
+</blockquote>
+<p>浏览器访问192.168.1.1即可进入uboot后台<br>
+<img src="https://s2.loli.net/2025/05/23/yuJTFWxGibPABMh.png" alt="" loading="lazy"></p>
+<p>选择要刷入的固件：<code>immortalwrt-mediatek-mt7981-mt7981-360-t7-108M-squashfs-factory.bin</code><br>
+完成后路由器就会自动重启，重启后请将电脑IP改为自动获取。<br>
+此固件默认后台<code>192.168.10.1</code>，用户名<code>root</code>，密码<code>admin</code>。浏览器访问后自行修改设置。</p>
+<h2 id="推荐插件">推荐插件</h2>
+<p>OpenWrt主题 <a href="https://github.com/jerrykuku/luci-theme-argon/blob/master/README_ZH.md">Argon</a><br>
+科学上网 <a href="https://github.com/xiaorouji/openwrt-passwall">PassWall</a><br>
+去广告 <a href="https://openwrt.org/packages/pkgdata/adblock">Adblock</a><br>
+时间控制 <a href="https://github.com/kingyond/luci-app-accesscontrol-plus">accesscontrol-plus</a><br>
+动态DNS <a href="https://openwrt.org/docs/guide-user/services/ddns/client">DDNS</a><br>
+KMS服务 <a href="https://www.codey.fun/upload/luci-app-vlmcsd_1.0.4-1_all.ipk">vlmcsd</a><br>
+解锁歌曲 <a href="https://github.com/UnblockNeteaseMusic/luci-app-unblockneteasemusic">unblockneteasemusic</a><br>
+打印服务器 <a href="https://openwrt.org/docs/guide-user/services/print_server/cups.server">CUPS</a></p>
+<h2 id="参考教程">参考教程</h2>
+<p><a href="https://cmi.hanwckf.top/p/360t7-telnet-uboot-console">360 T7 路由器 开启telnet及uboot控制台方法</a><br>
+<a href="https://www.right.com.cn/FORUM/thread-8278255-1-1.html">360T7刷机总结小白思维TTL刷机</a></p>
+
+              </div>
+              <div class="toc-container">
+                <ul class="markdownIt-TOC">
+<li>
+<ul>
+<li><a href="#%E7%A1%AC%E4%BB%B6%E7%AE%80%E4%BB%8B">硬件简介</a></li>
+<li><a href="#%E5%88%B7%E6%9C%BA%E5%87%86%E5%A4%87">刷机准备</a></li>
+<li><a href="#%E5%BC%80%E5%90%AFtelnet">开启Telnet</a></li>
+<li><a href="#%E5%88%B7%E5%85%A5uboot">刷入uboot</a></li>
+<li><a href="#%E5%88%B7%E5%85%A5%E5%9B%BA%E4%BB%B6">刷入固件</a></li>
+<li><a href="#%E6%8E%A8%E8%8D%90%E6%8F%92%E4%BB%B6">推荐插件</a></li>
+<li><a href="#%E5%8F%82%E8%80%83%E6%95%99%E7%A8%8B">参考教程</a></li>
+</ul>
+</li>
+</ul>
+
+              </div>
+            </div>
+          </article>
+        </div>
+
+        
+          <div class="next-post">
+            <div class="next">下一篇</div>
+            <a href="https://frazy8.github.io/post/rk3328-shua-ji/">
+              <h3 class="post-title">
+                瑞芯微RK3328刷机
+              </h3>
+            </a>
+          </div>
+        
+
+        
+          
+            <!--评论显示区，请插入合适的位置-->
+<div id="comment"></div>
+<!--Leancloud 操作库:-->
+<script src="//cdn1.lncld.net/static/js/3.6.1/av-min.js"></script>
+<!--Valine 的核心代码库-->
+<script src="//cdn.jsdelivr.net/npm/valine@1.4.4/dist/Valine.min.js"></script>
+<script>
+    new Valine({
+        el:'#comment',
+        appId: 'kx1ilB514vrTQSqtVSUAlbeZ-gzGzoHsz',
+        appKey: '41E5mt2HDKt6Vb4xRnPCNDJ4',
+        placeholder: 'ヾ?≧?≦)o快来评论一下吧!',
+        avatar:'', 
+        visitor: true
+    });
+</script>
+          
+
+          
+        
+
+        <div class="site-footer">
+  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
+  <a class="rss" href="https://frazy8.github.io/atom.xml" target="_blank">
+    <i class="ri-rss-line"></i> RSS
+  </a>
+</div>
+
+      </div>
+    </div>
+
+    <script>
+      hljs.initHighlightingOnLoad()
+
+      let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
+
+      // This should probably be throttled.
+      // Especially because it triggers during smooth scrolling.
+      // https://lodash.com/docs/4.17.10#throttle
+      // You could do like...
+      // window.addEventListener("scroll", () => {
+      //    _.throttle(doThatStuff, 100);
+      // });
+      // Only not doing it here to keep this Pen dependency-free.
+
+      window.addEventListener("scroll", event => {
+        let fromTop = window.scrollY;
+
+        mainNavLinks.forEach((link, index) => {
+          let section = document.getElementById(decodeURI(link.hash).substring(1));
+          let nextSection = null
+          if (mainNavLinks[index + 1]) {
+            nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
+          }
+          if (section.offsetTop <= fromTop) {
+            if (nextSection) {
+              if (nextSection.offsetTop > fromTop) {
+                link.classList.add("current");
+              } else {
+                link.classList.remove("current");    
+              }
+            } else {
+              link.classList.add("current");
+            }
+          } else {
+            link.classList.remove("current");
+          }
+        });
+      });
+
+    </script>
+  </body>
+</html>

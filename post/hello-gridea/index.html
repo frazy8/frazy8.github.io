@@ -1,0 +1,248 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Github+Gridea部署个人网站 | Frazy记录站</title>
+<link rel="shortcut icon" href="https://frazy8.github.io/favicon.ico?v=1758256087072">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="https://frazy8.github.io/styles/main.css">
+<link rel="alternate" type="application/atom+xml" title="Github+Gridea部署个人网站 | Frazy记录站 - Atom Feed" href="https://frazy8.github.io/atom.xml">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+
+
+
+    <meta name="description" content="Gridea 一个静态博客写作客户端,，使用Markdown 语法可以进行快速创作。你可以用它来记录你的生活、心情、知识、笔记、创意...
+
+Github主页
+搭建步骤
+1、准备好相关信息
+提前注册好Github帐号并安装Gridea客户端..." />
+    <meta name="keywords" content="博客,Gridea" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+    <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.5.1/build/highlight.min.js"></script>
+  </head>
+  <body>
+    <div class="main">
+      <div class="main-content">
+        <div class="site-header">
+  <a href="https://frazy8.github.io">
+  <img class="avatar" src="https://frazy8.github.io/images/avatar.png?v=1758256087072" alt="">
+  </a>
+  <h1 class="site-title">
+    Frazy记录站
+  </h1>
+  <p class="site-description">
+    温故而知新
+  </p>
+  <div class="menu-container">
+    
+      
+        <a href="/" class="menu">
+          首页
+        </a>
+      
+    
+      
+        <a href="/archives" class="menu">
+          归档
+        </a>
+      
+    
+      
+        <a href="/tags" class="menu">
+          标签
+        </a>
+      
+    
+      
+        <a href="/post/about" class="menu">
+          关于
+        </a>
+      
+    
+  </div>
+  <div class="social-container">
+    
+      
+        <a href="https://github.com/caifeng250" target="_blank">
+          <i class="ri-github-line"></i>
+        </a>
+      
+    
+      
+    
+      
+        <a href="https://weibo.com/u/1691109721" target="_blank">
+          <i class="ri-weibo-line"></i>
+        </a>
+      
+    
+      
+        <a href="https://www.zhihu.com/people/frazy-cai" target="_blank">
+          <i class="ri-zhihu-line"></i>
+        </a>
+      
+    
+      
+    
+  </div>
+</div>
+
+        <div class="post-detail">
+          <article class="post">
+            <h2 class="post-title">
+              Github+Gridea部署个人网站
+            </h2>
+            <div class="post-info">
+              <span>
+                2021-08-07
+              </span>
+              <span>
+                1 min read
+              </span>
+              
+                <a href="https://frazy8.github.io/tag/MudrUf4AML/" class="post-tag">
+                  # 博客
+                </a>
+              
+                <a href="https://frazy8.github.io/tag/eVN34VI49O/" class="post-tag">
+                  # Gridea
+                </a>
+              
+            </div>
+            
+              <img class="post-feature-image" src="https://frazy8.github.io/post-images/hello-gridea.png" alt="">
+            
+            <div class="post-content-wrapper">
+              <div class="post-content" v-pre>
+                <p><strong>Gridea</strong> 一个静态博客写作客户端,，使用<strong>Markdown</strong> 语法可以进行快速创作。你可以用它来记录你的生活、心情、知识、笔记、创意...</p>
+<!-- more -->
+<p><a href="https://github.com/getgridea/gridea">Github主页</a></p>
+<p><strong>搭建步骤</strong></p>
+<h1 id="1-准备好相关信息">1、准备好相关信息</h1>
+<p>提前注册好<a href="https://github.com/"><strong>Github</strong></a>帐号并安装<a href="https://github.com/getgridea/gridea"><strong>Gridea</strong></a>客户端；</p>
+<!-- more -->
+<h1 id="2-创建github仓库">2、创建GitHub仓库</h1>
+<p>点击此链接后按下图新建仓库<a href="https://github.com/new">https://github.com/new</a><br>
+<img src="https://s2.loli.net/2024/12/28/FimtPqN7jYDsnOL.png" alt="" loading="lazy"></p>
+<!-- more -->
+<h1 id="3-创建token与oauth-apps">3、创建token与OAuth Apps</h1>
+<p>点击此链接后按下图创建token并记录下来 <a href="https://github.com/settings/tokens/new">https://github.com/settings/tokens/new</a><br>
+<img src="https://s2.loli.net/2024/12/28/xLhaEuipjseRlIN.png" alt="" loading="lazy"></p>
+<p>点击此链接后按下图注册OAuth Apps <a href="https://github.com/settings/applications/new">https://github.com/settings/applications/new</a><br>
+<img src="https://s2.loli.net/2024/12/28/bMzLh6puXldDBO9.png" alt="" loading="lazy"><br>
+完成后得到如下ID和secrets记录下来<br>
+<img src="https://s2.loli.net/2024/12/28/H8GhqPZM9IBNnW2.png" alt="" loading="lazy"></p>
+<!-- more -->
+<h1 id="4-配置gridea客户端">4、配置Gridea客户端</h1>
+<p>基础配置：<br>
+<img src="https://s2.loli.net/2024/12/28/xGy4unwQHZKAjch.png" alt="" loading="lazy"></p>
+<p>评论配置：<br>
+<img src="https://s2.loli.net/2024/12/28/Qw4FYUvSj2DbXNz.png" alt="" loading="lazy"></p>
+<p>可选评论配置 <a href="https://github.com/xCss/Valine">Valine</a></p>
+<!-- more -->
+<h1 id="5-发布并验证">5、发布并验证</h1>
+<p>接下来就可以用Gridea创建并发布文章了，评论功能也已开启，同步成功后稍等几分钟，在浏览器地址栏输入网址https://你的id.github.io 或者点击Gridea客户端左下角的地球图标，就可以访问网站了。</p>
+<p>😘 Enjoy~</p>
+
+              </div>
+              <div class="toc-container">
+                <ul class="markdownIt-TOC">
+<li><a href="#1-%E5%87%86%E5%A4%87%E5%A5%BD%E7%9B%B8%E5%85%B3%E4%BF%A1%E6%81%AF">1、准备好相关信息</a></li>
+<li><a href="#2-%E5%88%9B%E5%BB%BAgithub%E4%BB%93%E5%BA%93">2、创建GitHub仓库</a></li>
+<li><a href="#3-%E5%88%9B%E5%BB%BAtoken%E4%B8%8Eoauth-apps">3、创建token与OAuth Apps</a></li>
+<li><a href="#4-%E9%85%8D%E7%BD%AEgridea%E5%AE%A2%E6%88%B7%E7%AB%AF">4、配置Gridea客户端</a></li>
+<li><a href="#5-%E5%8F%91%E5%B8%83%E5%B9%B6%E9%AA%8C%E8%AF%81">5、发布并验证</a></li>
+</ul>
+
+              </div>
+            </div>
+          </article>
+        </div>
+
+        
+          <div class="next-post">
+            <div class="next">下一篇</div>
+            <a href="https://frazy8.github.io/post/lg-g7-shua-ji-ji-lu/">
+              <h3 class="post-title">
+                LG G7 刷机记录
+              </h3>
+            </a>
+          </div>
+        
+
+        
+          
+            <!--评论显示区，请插入合适的位置-->
+<div id="comment"></div>
+<!--Leancloud 操作库:-->
+<script src="//cdn1.lncld.net/static/js/3.6.1/av-min.js"></script>
+<!--Valine 的核心代码库-->
+<script src="//cdn.jsdelivr.net/npm/valine@1.4.4/dist/Valine.min.js"></script>
+<script>
+    new Valine({
+        el:'#comment',
+        appId: 'kx1ilB514vrTQSqtVSUAlbeZ-gzGzoHsz',
+        appKey: '41E5mt2HDKt6Vb4xRnPCNDJ4',
+        placeholder: 'ヾ?≧?≦)o快来评论一下吧!',
+        avatar:'', 
+        visitor: true
+    });
+</script>
+          
+
+          
+        
+
+        <div class="site-footer">
+  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
+  <a class="rss" href="https://frazy8.github.io/atom.xml" target="_blank">
+    <i class="ri-rss-line"></i> RSS
+  </a>
+</div>
+
+      </div>
+    </div>
+
+    <script>
+      hljs.initHighlightingOnLoad()
+
+      let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
+
+      // This should probably be throttled.
+      // Especially because it triggers during smooth scrolling.
+      // https://lodash.com/docs/4.17.10#throttle
+      // You could do like...
+      // window.addEventListener("scroll", () => {
+      //    _.throttle(doThatStuff, 100);
+      // });
+      // Only not doing it here to keep this Pen dependency-free.
+
+      window.addEventListener("scroll", event => {
+        let fromTop = window.scrollY;
+
+        mainNavLinks.forEach((link, index) => {
+          let section = document.getElementById(decodeURI(link.hash).substring(1));
+          let nextSection = null
+          if (mainNavLinks[index + 1]) {
+            nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
+          }
+          if (section.offsetTop <= fromTop) {
+            if (nextSection) {
+              if (nextSection.offsetTop > fromTop) {
+                link.classList.add("current");
+              } else {
+                link.classList.remove("current");    
+              }
+            } else {
+              link.classList.add("current");
+            }
+          } else {
+            link.classList.remove("current");
+          }
+        });
+      });
+
+    </script>
+  </body>
+</html>

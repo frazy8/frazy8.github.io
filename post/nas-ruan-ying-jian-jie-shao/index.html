@@ -1,0 +1,329 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>NAS 软硬件介绍 | Frazy记录站</title>
+<link rel="shortcut icon" href="https://frazy8.github.io/favicon.ico?v=1758256087072">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="https://frazy8.github.io/styles/main.css">
+<link rel="alternate" type="application/atom+xml" title="NAS 软硬件介绍 | Frazy记录站 - Atom Feed" href="https://frazy8.github.io/atom.xml">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+
+
+
+    <meta name="description" content="NAS系统
+OMV
+
+OpenMediaVault 是基于 Debian GNU/Linux 的网络连接存储（NAS）开源解决方案。主要被设计用于家用环境或小型家庭办公室，能让所有人无需很深的知识就能安装并管理一套网络连接存储。它包含 SS..." />
+    <meta name="keywords" content="NAS,系统,硬件,推荐" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+    <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.5.1/build/highlight.min.js"></script>
+  </head>
+  <body>
+    <div class="main">
+      <div class="main-content">
+        <div class="site-header">
+  <a href="https://frazy8.github.io">
+  <img class="avatar" src="https://frazy8.github.io/images/avatar.png?v=1758256087072" alt="">
+  </a>
+  <h1 class="site-title">
+    Frazy记录站
+  </h1>
+  <p class="site-description">
+    温故而知新
+  </p>
+  <div class="menu-container">
+    
+      
+        <a href="/" class="menu">
+          首页
+        </a>
+      
+    
+      
+        <a href="/archives" class="menu">
+          归档
+        </a>
+      
+    
+      
+        <a href="/tags" class="menu">
+          标签
+        </a>
+      
+    
+      
+        <a href="/post/about" class="menu">
+          关于
+        </a>
+      
+    
+  </div>
+  <div class="social-container">
+    
+      
+        <a href="https://github.com/caifeng250" target="_blank">
+          <i class="ri-github-line"></i>
+        </a>
+      
+    
+      
+    
+      
+        <a href="https://weibo.com/u/1691109721" target="_blank">
+          <i class="ri-weibo-line"></i>
+        </a>
+      
+    
+      
+        <a href="https://www.zhihu.com/people/frazy-cai" target="_blank">
+          <i class="ri-zhihu-line"></i>
+        </a>
+      
+    
+      
+    
+  </div>
+</div>
+
+        <div class="post-detail">
+          <article class="post">
+            <h2 class="post-title">
+              NAS 软硬件介绍
+            </h2>
+            <div class="post-info">
+              <span>
+                2024-12-30
+              </span>
+              <span>
+                7 min read
+              </span>
+              
+                <a href="https://frazy8.github.io/tag/Rv94tVWaav/" class="post-tag">
+                  # NAS
+                </a>
+              
+                <a href="https://frazy8.github.io/tag/07WMwzO7N-m/" class="post-tag">
+                  # 系统
+                </a>
+              
+                <a href="https://frazy8.github.io/tag/8TyEoha0AgV/" class="post-tag">
+                  # 硬件
+                </a>
+              
+                <a href="https://frazy8.github.io/tag/aUgFL-_OVOF/" class="post-tag">
+                  # 推荐
+                </a>
+              
+            </div>
+            
+              <img class="post-feature-image" src="https://frazy8.github.io/post-images/nas-ruan-ying-jian-jie-shao.jpg" alt="">
+            
+            <div class="post-content-wrapper">
+              <div class="post-content" v-pre>
+                <h1 id="nas系统">NAS系统</h1>
+<h2 id="omv">OMV</h2>
+<p><img src="https://s2.loli.net/2024/12/30/PE5NMOZmhSYBL7p.png" alt="" loading="lazy"><br>
+OpenMediaVault 是基于 Debian GNU/Linux 的网络连接存储（NAS）开源解决方案。主要被设计用于家用环境或小型家庭办公室，能让所有人无需很深的知识就能安装并管理一套网络连接存储。它包含 SSH、FTP、SMB/CIFS、DAAP 媒体服务器、rsync、 BitTorrent 等很多种服务。</p>
+<blockquote>
+<ul>
+<li>它可用于 x86-64 和 ARM 平台（树莓派等）；</li>
+<li>具有完整的 Web 管理界面；</li>
+<li>可以通过 SSH（如果启用）进行控制；</li>
+<li>可以使用各种不同的协议（例如 FTP，SMB / CIFS，NFS）访问文件存储，并且可以通过用户和组的访问权限管理来控制；</li>
+<li>得益于模块化的设计，它可以通过三方插件omv-extras来扩展（docker、mysql、nginx、SnapRAID）。</li>
+</ul>
+</blockquote>
+<figure data-type="image" tabindex="1"><img src="https://s2.loli.net/2024/12/30/dzK9FDPu7rfRwbV.png" alt="" loading="lazy"></figure>
+<h2 id="truenas">TrueNAS</h2>
+<p><img src="https://s2.loli.net/2024/12/30/sLVZiy6CkafB9Oz.png" alt="" loading="lazy"><br>
+TrueNAS的前身是FreeNAS，它是一套免费开源的NAS服务器，基于FreeBSD开发，使用OpenZFS文件系统，对普通硬件兼容性较好，即便在非服务器硬件平台，也能够提供强大的性能和数据安全保障。</p>
+<blockquote>
+<ul>
+<li>建议16GB 内存 (推荐使用 ECC 内存) ZFS cache内存占用巨大</li>
+<li>域控接入、虚拟机快照、Minio对象存储</li>
+<li>支持CIFS，AFP，NFS，iSCSI，SSH，rsync，WebDAV，以及 FTP/TFTP 等文件共享和传输协议；</li>
+<li>支持Active Directory和LDAP用于用户认证以及手动的用户和用户组创建；</li>
+<li>支持创建和导入ZFS存储池 RAIDZ，以及：存储限额，快照，数据压缩，重复数据删除，磁盘替换等；</li>
+<li>支持通过第三方插件扩展功能（下载 transmission、云盘NextCloud、同步备份 btsync、媒体中心plexmediaserver、对象存储Minio等、IPFS、chia挖矿）</li>
+<li>基于 Django 开发的管理界面，通过浏览器管理；</li>
+<li>支持安全的磁盘替换，自动 ZFS快照，ZFS 垃圾清理，计划任务等均可在图形化界面中操作；</li>
+<li>支持 Windows ACLs 和 UNIX 文件系统权限控制。</li>
+</ul>
+</blockquote>
+<p><img src="https://s2.loli.net/2024/12/30/J9MbE8qPQGL4XTI.jpg" alt="" loading="lazy"><br>
+<img src="https://s2.loli.net/2024/12/30/ahGOkdUAHtEpzoL.jpg" alt="" loading="lazy"></p>
+<h2 id="unraid">Unraid</h2>
+<p><img src="https://s2.loli.net/2024/12/30/sagRVPT8qrLQukc.png" alt="" loading="lazy"><br>
+unRAID是基于 Slackware 这个 Linux 发行版的 NAS 系统，Unraid不通过组 RAID 方式来存储数据，但是可以和 RAID 一样做到冗余备份，简单来说 Unraid就是带有检验盘的磁盘簇 (JBOD)。</p>
+<blockquote>
+<ul>
+<li>集成插件支持，集成 Docker 支持，支持VMS虚拟机及硬件直通，可以在此基础上虚拟化安装各个操作系统以及充分利用硬件接口；</li>
+<li>unRAID，即不进行硬 Raid。 是一种奇特的软 Raid，特点是只拆分文件夹，不拆分文件，也就是没有硬 Raid 的数据分片功能。单独拆下一个硬盘，文件也都可读可用；</li>
+<li>支持硬盘无访问自动休眠，当硬盘处于休眠状态时系统要读取文件，Unraid 只需唤醒文件所在的那个盘即可，而硬 Raid 要「唤醒所有硬盘」；</li>
+<li>只需要一个校验盘（需大于阵列中最大的盘的容量），整个磁盘阵列允许一个磁盘挂掉，只需要用同等大小的磁盘替换即可；</li>
+<li>扩容方便，只需要往阵列中继续添加磁盘即可，唯一的限制就是新添加的硬盘容量不能大于校验盘大小。如果新加入的盘容量大于校验盘则需要先将校验盘替换成该硬盘，然后将原来的校验盘作为新盘加入；</li>
+<li>unRAID 是需要授权的，授权价格从最低 $59(6 块硬盘）到 Pro $129 （无限硬盘）。</li>
+</ul>
+</blockquote>
+<figure data-type="image" tabindex="2"><img src="https://s2.loli.net/2024/12/30/iH2v8AZyfMQJrL7.jpg" alt="" loading="lazy"></figure>
+<h2 id="飞牛os">飞牛OS</h2>
+<p><img src="https://s2.loli.net/2024/12/30/sVQj5w9znU3luN7.png" alt="fnOS.png" loading="lazy"><br>
+飞牛私有云 fnOS 是一款免费、高效又安全的国产NAS系统，基于最新 Linux 内核（Debian 发行版）深度开发，兼容主流 x86 硬件，自由组装 NAS，灵活扩展外部存储。</p>
+<blockquote>
+<ul>
+<li>兼容性强，主流的 x86 硬件或者闲置设备都能够使用；</li>
+<li>支持灵活地扩展外部存储，能够连接 U 盘、硬盘柜等各类外接设备；</li>
+<li>影视功能强大。可以远程下载和解析种子，支持硬件解码，支持自动刮削整理成海报墙，识别准确率高；</li>
+<li>飞牛移动端App简单易用好上手，可以轻松访问 NAS 数据和应用，一个 APP 集成了文件管理，相册管理，系统管理，下载和影视等全部功能；</li>
+<li>Docker支持，提供了流畅的镜像拉取体验，支持Docker Compose进行批量部署；</li>
+<li>飞牛OS拥有活跃的社区和用户群体，用户可以在社区中交流使用心得、寻求帮助等；</li>
+<li>虚拟机功能开发中；</li>
+<li>应用中心强大，开箱即用。</li>
+</ul>
+</blockquote>
+<figure data-type="image" tabindex="3"><img src="https://s2.loli.net/2024/12/30/DSruEOZtgdkNocj.png" alt="fnOS2.png" loading="lazy"></figure>
+<h2 id="群晖-dsm">群晖 DSM</h2>
+<p><img src="https://s2.loli.net/2024/12/30/JpvuGLNjO3Dc8V9.jpg" alt="Synology DSM.jpg" loading="lazy"><br>
+业界知名整机厂商，作为商用方案在家用以及小型办公场景下无敌手，包括协同办公，数据备份，媒体管理以及本身的NAS系统都是其亮点，并且备份工具选择多样强大</p>
+<blockquote>
+<ul>
+<li>同时支持 x86和 ARM 平台，X86平台可以安装DOCKER及虚拟机；</li>
+<li>具有功能强大的 Web 管理界面；</li>
+<li>共享协议齐全（FTP，SMB / CIFS 或 NFS）访问文件存储，权限管理完善；</li>
+<li>套件丰富并且有第三方厂商支持，网盘同步、内网穿透、下载工具等应用齐全；</li>
+<li>缺点是硬件扩展性相对较差，而且官方硬件配置不能更换，同样价位的配置相当低。</li>
+</ul>
+</blockquote>
+<figure data-type="image" tabindex="4"><img src="https://s2.loli.net/2024/12/30/oPjHiVRnNtdhIU9.jpg" alt="" loading="lazy"></figure>
+<h2 id="windows-server">Windows Server</h2>
+<p><img src="https://s2.loli.net/2024/12/30/K29OVArQLem6is5.jpg" alt="Windows Server.jpeg" loading="lazy"><br>
+微软推出的专门为服务器设计的Windows操作系统</p>
+<blockquote>
+<ul>
+<li>第三方软件丰富、硬件兼容性好、背靠微软安全、可靠、简单已用，可靠性强；</li>
+<li>拥有强大的管理工具，如Windows管理中心、PowerShell等，管理员能够轻松监控和管理服务器的运行状态。通过远程桌面、PowerShell等工具，可以随时随地对服务器进行操作和维护；</li>
+<li>支持虚拟化技术，如Hyper-V等，能够在单个物理服务器上运行多个虚拟机，提高资源利用率和节省成本‌；</li>
+<li>有较强的灵活性与可扩展性，可以根据组织的需求进行扩展和升级，满足不断变化的业务需求；</li>
+<li>系统占用资源较大但管理界面功能分散，不适合统一管理。</li>
+</ul>
+</blockquote>
+<h1 id="硬件推荐">硬件推荐</h1>
+<figure data-type="image" tabindex="5"><img src="https://s2.loli.net/2024/12/30/i5DBXZlSw3pV62A.png" alt="" loading="lazy"></figure>
+<p>除了上述硬件，现在也推荐自行DIY，选择好满意的带背板机箱即可</p>
+<h1 id="应用推荐">应用推荐</h1>
+<p>私有同步云盘：NextCloud、Alist、易有云、可道云；<br>
+多媒体管理：Jellyfin、Plex、Emby；<br>
+下载软件：Transmission、Aria2、qbittorrentee、百度网盘；<br>
+同步备份：微力同步、rsync、resilio-sync；<br>
+内网穿透：lucky、frp、花生壳；<br>
+其他：photoprism相册、Sun-Panel导航页、Halo博客、reader阅读、Nas-tools影音管理、Komga漫画管理等。</p>
+
+              </div>
+              <div class="toc-container">
+                <ul class="markdownIt-TOC">
+<li><a href="#nas%E7%B3%BB%E7%BB%9F">NAS系统</a>
+<ul>
+<li><a href="#omv">OMV</a></li>
+<li><a href="#truenas">TrueNAS</a></li>
+<li><a href="#unraid">Unraid</a></li>
+<li><a href="#%E9%A3%9E%E7%89%9Bos">飞牛OS</a></li>
+<li><a href="#%E7%BE%A4%E6%99%96-dsm">群晖 DSM</a></li>
+<li><a href="#windows-server">Windows Server</a></li>
+</ul>
+</li>
+<li><a href="#%E7%A1%AC%E4%BB%B6%E6%8E%A8%E8%8D%90">硬件推荐</a></li>
+<li><a href="#%E5%BA%94%E7%94%A8%E6%8E%A8%E8%8D%90">应用推荐</a></li>
+</ul>
+
+              </div>
+            </div>
+          </article>
+        </div>
+
+        
+          <div class="next-post">
+            <div class="next">下一篇</div>
+            <a href="https://frazy8.github.io/post/bu-yong-deng-lu-de-lin-shi-wen-jian-gong-xiang-shen-qi/">
+              <h3 class="post-title">
+                不用登录的临时文件共享神器
+              </h3>
+            </a>
+          </div>
+        
+
+        
+          
+            <!--评论显示区，请插入合适的位置-->
+<div id="comment"></div>
+<!--Leancloud 操作库:-->
+<script src="//cdn1.lncld.net/static/js/3.6.1/av-min.js"></script>
+<!--Valine 的核心代码库-->
+<script src="//cdn.jsdelivr.net/npm/valine@1.4.4/dist/Valine.min.js"></script>
+<script>
+    new Valine({
+        el:'#comment',
+        appId: 'kx1ilB514vrTQSqtVSUAlbeZ-gzGzoHsz',
+        appKey: '41E5mt2HDKt6Vb4xRnPCNDJ4',
+        placeholder: 'ヾ?≧?≦)o快来评论一下吧!',
+        avatar:'', 
+        visitor: true
+    });
+</script>
+          
+
+          
+        
+
+        <div class="site-footer">
+  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
+  <a class="rss" href="https://frazy8.github.io/atom.xml" target="_blank">
+    <i class="ri-rss-line"></i> RSS
+  </a>
+</div>
+
+      </div>
+    </div>
+
+    <script>
+      hljs.initHighlightingOnLoad()
+
+      let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
+
+      // This should probably be throttled.
+      // Especially because it triggers during smooth scrolling.
+      // https://lodash.com/docs/4.17.10#throttle
+      // You could do like...
+      // window.addEventListener("scroll", () => {
+      //    _.throttle(doThatStuff, 100);
+      // });
+      // Only not doing it here to keep this Pen dependency-free.
+
+      window.addEventListener("scroll", event => {
+        let fromTop = window.scrollY;
+
+        mainNavLinks.forEach((link, index) => {
+          let section = document.getElementById(decodeURI(link.hash).substring(1));
+          let nextSection = null
+          if (mainNavLinks[index + 1]) {
+            nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
+          }
+          if (section.offsetTop <= fromTop) {
+            if (nextSection) {
+              if (nextSection.offsetTop > fromTop) {
+                link.classList.add("current");
+              } else {
+                link.classList.remove("current");    
+              }
+            } else {
+              link.classList.add("current");
+            }
+          } else {
+            link.classList.remove("current");
+          }
+        });
+      });
+
+    </script>
+  </body>
+</html>

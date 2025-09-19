@@ -1,0 +1,310 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>瑞芯微RK3328刷机 | Frazy记录站</title>
+<link rel="shortcut icon" href="https://frazy8.github.io/favicon.ico?v=1758256087072">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="https://frazy8.github.io/styles/main.css">
+<link rel="alternate" type="application/atom+xml" title="瑞芯微RK3328刷机 | Frazy记录站 - Atom Feed" href="https://frazy8.github.io/atom.xml">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+
+
+
+    <meta name="description" content="  我家云/粒子云盒子都是RK3328主板，采用usb3.0转接sata方式内置 3.5寸4TB 硬盘。硬件方案为 RK3328 4核A53，1GB DDR内存，8GB emmc闪存，千兆网卡，usb2.0 和 usb3.0 接口各一个，刷..." />
+    <meta name="keywords" content="ARM,瑞芯微,RK3328,OMV,NAS,刷机" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+    <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.5.1/build/highlight.min.js"></script>
+  </head>
+  <body>
+    <div class="main">
+      <div class="main-content">
+        <div class="site-header">
+  <a href="https://frazy8.github.io">
+  <img class="avatar" src="https://frazy8.github.io/images/avatar.png?v=1758256087072" alt="">
+  </a>
+  <h1 class="site-title">
+    Frazy记录站
+  </h1>
+  <p class="site-description">
+    温故而知新
+  </p>
+  <div class="menu-container">
+    
+      
+        <a href="/" class="menu">
+          首页
+        </a>
+      
+    
+      
+        <a href="/archives" class="menu">
+          归档
+        </a>
+      
+    
+      
+        <a href="/tags" class="menu">
+          标签
+        </a>
+      
+    
+      
+        <a href="/post/about" class="menu">
+          关于
+        </a>
+      
+    
+  </div>
+  <div class="social-container">
+    
+      
+        <a href="https://github.com/caifeng250" target="_blank">
+          <i class="ri-github-line"></i>
+        </a>
+      
+    
+      
+    
+      
+        <a href="https://weibo.com/u/1691109721" target="_blank">
+          <i class="ri-weibo-line"></i>
+        </a>
+      
+    
+      
+        <a href="https://www.zhihu.com/people/frazy-cai" target="_blank">
+          <i class="ri-zhihu-line"></i>
+        </a>
+      
+    
+      
+    
+  </div>
+</div>
+
+        <div class="post-detail">
+          <article class="post">
+            <h2 class="post-title">
+              瑞芯微RK3328刷机
+            </h2>
+            <div class="post-info">
+              <span>
+                2023-05-14
+              </span>
+              <span>
+                4 min read
+              </span>
+              
+                <a href="https://frazy8.github.io/tag/8ZKDzejrBJ/" class="post-tag">
+                  # ARM
+                </a>
+              
+                <a href="https://frazy8.github.io/tag/k5Jb4ULGC1P/" class="post-tag">
+                  # 瑞芯微
+                </a>
+              
+                <a href="https://frazy8.github.io/tag/5ccnUUKrGZB/" class="post-tag">
+                  # RK3328
+                </a>
+              
+                <a href="https://frazy8.github.io/tag/nsKEZgq122J/" class="post-tag">
+                  # OMV
+                </a>
+              
+                <a href="https://frazy8.github.io/tag/Rv94tVWaav/" class="post-tag">
+                  # NAS
+                </a>
+              
+                <a href="https://frazy8.github.io/tag/poxe5vpTUFl/" class="post-tag">
+                  # 刷机
+                </a>
+              
+            </div>
+            
+              <img class="post-feature-image" src="https://frazy8.github.io/post-images/rk3328-shua-ji.jpg" alt="">
+            
+            <div class="post-content-wrapper">
+              <div class="post-content" v-pre>
+                <p>  我家云/粒子云盒子都是RK3328主板，采用usb3.0转接sata方式内置 3.5寸4TB 硬盘。硬件方案为 RK3328 4核A53，1GB DDR内存，8GB emmc闪存，千兆网卡，usb2.0 和 usb3.0 接口各一个，刷入OMV系统后可作为轻量级NAS使用。</p>
+<h2 id="一-准备工作">一、准备工作</h2>
+<p>需要设备：Windows电脑一台、USB双公头线一根、回形针/卡针一个</p>
+<h3 id="1-安装rockusb驱动">1、安装Rockusb驱动</h3>
+<p>下载<a href="https://download.t-firefly.com/product/RK3328/Tools/DriverAssitant/DriverAssitant_v4.5.rar">DriverAssitantv4.5</a>，解压后运行里面的DriverInstall.exe</p>
+<p><img src="https://s2.loli.net/2025/05/14/oRNavdfYy4JVeGC.png" alt="image.png" loading="lazy"><br>
+点击“驱动安装”按钮安装驱动；如果想卸载驱动，则点击“驱动卸载”按钮。</p>
+<h3 id="2-androidtool">2、AndroidTool</h3>
+<p>下载然后解压<a href="firefly.com/product/RK3328/Tools/AndroidTool/AndroidTool_Release_V2.58.zip">AndroidTool_Release_V2.58.zip</a> 文件。</p>
+<h3 id="3-准备线刷固件">3、准备线刷固件</h3>
+<p>下载引导文件：<br>
+<a href="https://github.com/ophub/u-boot/blob/main/u-boot/rockchip/beikeyun/rk3328_loader_v1.14.249.bin">rk3328_loader_v1.14.249.bin</a></p>
+<p>下载镜像文件，任选其一，建议选第一个：<br>
+<a href="https://github.com/ayufan-rock64/linux-build/releases/download/0.10.12/buster-openmediavault-rock64-0.10.12-1184-arm64.img.xz">ayufan的0.10.12版OMV镜像</a><br>
+<a href="https://github.com/ophub/amlogic-s9xxx-armbian/releases/download/Armbian_noble_save_2025.05/Armbian_25.05.0_rockchip_renegade-rk3328_noble_6.1.137_server_2025.05.05.img.gz">ophub的最新Armbian版镜像</a><br>
+<a href="https://le.builds.lakka.tv/RK3328.aarch64/">Lakka游戏系统镜像</a><br>
+<a href="https://files.pine64.org/os/ROCK64/android/rock64_20180606_stock_android_8.1_emmcboot.img.xz">Android TV镜像</a></p>
+<p>其实RK3328还有很多镜像可刷，参考<a href="https://wiki.pine64.org/wiki/ROCK64_Software_Releases">ROCK64可用镜像列表</a></p>
+<p>将引导文件bin和镜像文件img复制到AndroidToolRelease\Image\路径中，稳妥起见可用hash.txt进行完整性校验。</p>
+<h2 id="二-刷机">二、刷机</h2>
+<h3 id="1-加载线刷包">1、加载线刷包</h3>
+<p>运行AndroidTool.exe，瑞芯微开发工具默认在下载镜像页面自动加载Image子目录中的线刷包，如果没有加载成功也可以自己手动选择文件，此时提示“没有发现设备”</p>
+<figure data-type="image" tabindex="1"><img src="https://s2.loli.net/2025/05/14/PR2ljstdFOghp9n.png" alt="" loading="lazy"></figure>
+<h3 id="2-进rockusb模式">2、进Rockusb模式</h3>
+<ul>
+<li>保持盒子处于关机断电状态，去掉所有线缆；</li>
+<li>使用USB双公头线连接盒子USB2.0端口和电脑主机后背板USB端口；</li>
+<li>使用回形针（或其它针状物）插入盒子RESET孔并保持按住状态；</li>
+<li>插入盒子电源线让盒子加电；</li>
+<li>等待大概3秒左右松开回形针</li>
+</ul>
+<p>这时windows会提示发现新设备，自动安装驱动后在设备管理器中会出现“RockusbDevice”设备，表示已正确识别到线刷设备</p>
+<figure data-type="image" tabindex="2"><img src="https://s2.loli.net/2025/05/14/DyorxS1jetfFhlJ.png" alt="" loading="lazy"></figure>
+<p>此时瑞芯微开发工具也会提示“发现一个LOADER设备”</p>
+<figure data-type="image" tabindex="3"><img src="https://s2.loli.net/2025/05/14/pMBTHOZirCDSKQY.png" alt="" loading="lazy"></figure>
+<h3 id="3-进maskrom模式">3、进Maskrom模式</h3>
+<p>瑞芯微开发工具切换到高级功能页面，点击“进入Maskrom”</p>
+<figure data-type="image" tabindex="4"><img src="https://s2.loli.net/2025/05/14/OsyBizCpAQtgqGH.png" alt="" loading="lazy"></figure>
+<p>伴随Windows识别硬件提示音，瑞芯微开发工具会提示“发现一个MASKROM设备”</p>
+<figure data-type="image" tabindex="5"><img src="https://s2.loli.net/2025/05/14/1RLFZMrGzvxJImW.png" alt="" loading="lazy"></figure>
+<h3 id="4-正式刷机">4、正式刷机</h3>
+<p>瑞芯微开发工具切回下载镜像页面，点击“执行”按钮开始烧录：</p>
+<figure data-type="image" tabindex="6"><img src="https://s2.loli.net/2025/05/14/xSuE1YsPGXaevhJ.png" alt="" loading="lazy"></figure>
+<p>烧录中</p>
+<figure data-type="image" tabindex="7"><img src="https://s2.loli.net/2025/05/14/CgA9IPNfnVyK8iM.png" alt="" loading="lazy"></figure>
+<h2 id="后续操作">后续操作</h2>
+<p>烧录完成后需要手动断开盒子电源线，然后即可插入网线、电源线进行首次开机。<br>
+OMV内网IP地址可在路由器中查找主机名为Rock64的设备，或同局域网的安卓手机安装使用OMVRmote进行查找。<br>
+OMV WebUI登陆界面用户名和密码为admin/openmediavault<br>
+SSH需要开启允许Root登陆才能进行连接：Web&gt;SSH&gt;PermitRootLogin&gt;Save&gt;Apply<br>
+SSH终端用户名和密码为root/openmediavault</p>
+<h2 id="终极救砖方式">终极救砖方式</h2>
+<p>拆机，连接好USB双公头线，短接如图主板背面maskrom短接点，短接时主板加电，电脑端识别到线刷设备后松开短接，AnroidTool 就会发现Maskrom设备</p>
+<figure data-type="image" tabindex="8"><img src="https://s2.loli.net/2025/05/14/YxFbBztyT7SJ9cf.png" alt="" loading="lazy"></figure>
+<p>AnroidTool界面右键添加项</p>
+<ul>
+<li>地址 <code>0xCCCCCCCC</code>, 名字 <code>Boot</code>, 路径文件选择 <code>rk3328_loader_v1.14.249.bin</code>。</li>
+<li>地址 <code>0x00000000</code>, 名字 <code>system</code>, 路径文件选择要刷的img镜像。</li>
+<li>勾选<code>强制按地址写入</code>，点<code>执行</code>，等右侧下载面板显示进度完成即可。</li>
+</ul>
+<p>本教程仅适用于联想粒子云/我家云原厂安卓系统线刷成基于Debian的OMV NAS系统<br>
+参考文档-&gt; <a href="https://wiki.t-firefly.com/zh_CN/ROC-RK3328-CC/flash_emmc.html">Firefly官方指南</a><br>
+线刷包来源-&gt; <a href="https://github.com/ayufan-rock64/linux-build/releases">ayufan Rock64镜像</a><br>
+刷机方法-&gt; <a href="https://www.right.com.cn/forum/thread-341574-1-1.html">webpad粒子云刷机教程</a></p>
+
+              </div>
+              <div class="toc-container">
+                <ul class="markdownIt-TOC">
+<li>
+<ul>
+<li><a href="#%E4%B8%80-%E5%87%86%E5%A4%87%E5%B7%A5%E4%BD%9C">一、准备工作</a>
+<ul>
+<li><a href="#1-%E5%AE%89%E8%A3%85rockusb%E9%A9%B1%E5%8A%A8">1、安装Rockusb驱动</a></li>
+<li><a href="#2-androidtool">2、AndroidTool</a></li>
+<li><a href="#3-%E5%87%86%E5%A4%87%E7%BA%BF%E5%88%B7%E5%9B%BA%E4%BB%B6">3、准备线刷固件</a></li>
+</ul>
+</li>
+<li><a href="#%E4%BA%8C-%E5%88%B7%E6%9C%BA">二、刷机</a>
+<ul>
+<li><a href="#1-%E5%8A%A0%E8%BD%BD%E7%BA%BF%E5%88%B7%E5%8C%85">1、加载线刷包</a></li>
+<li><a href="#2-%E8%BF%9Brockusb%E6%A8%A1%E5%BC%8F">2、进Rockusb模式</a></li>
+<li><a href="#3-%E8%BF%9Bmaskrom%E6%A8%A1%E5%BC%8F">3、进Maskrom模式</a></li>
+<li><a href="#4-%E6%AD%A3%E5%BC%8F%E5%88%B7%E6%9C%BA">4、正式刷机</a></li>
+</ul>
+</li>
+<li><a href="#%E5%90%8E%E7%BB%AD%E6%93%8D%E4%BD%9C">后续操作</a></li>
+<li><a href="#%E7%BB%88%E6%9E%81%E6%95%91%E7%A0%96%E6%96%B9%E5%BC%8F">终极救砖方式</a></li>
+</ul>
+</li>
+</ul>
+
+              </div>
+            </div>
+          </article>
+        </div>
+
+        
+          <div class="next-post">
+            <div class="next">下一篇</div>
+            <a href="https://frazy8.github.io/post/potplayer-an-zhuang-pei-zhi-bu-zou/">
+              <h3 class="post-title">
+                Potplayer安装配置步骤
+              </h3>
+            </a>
+          </div>
+        
+
+        
+          
+            <!--评论显示区，请插入合适的位置-->
+<div id="comment"></div>
+<!--Leancloud 操作库:-->
+<script src="//cdn1.lncld.net/static/js/3.6.1/av-min.js"></script>
+<!--Valine 的核心代码库-->
+<script src="//cdn.jsdelivr.net/npm/valine@1.4.4/dist/Valine.min.js"></script>
+<script>
+    new Valine({
+        el:'#comment',
+        appId: 'kx1ilB514vrTQSqtVSUAlbeZ-gzGzoHsz',
+        appKey: '41E5mt2HDKt6Vb4xRnPCNDJ4',
+        placeholder: 'ヾ?≧?≦)o快来评论一下吧!',
+        avatar:'', 
+        visitor: true
+    });
+</script>
+          
+
+          
+        
+
+        <div class="site-footer">
+  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
+  <a class="rss" href="https://frazy8.github.io/atom.xml" target="_blank">
+    <i class="ri-rss-line"></i> RSS
+  </a>
+</div>
+
+      </div>
+    </div>
+
+    <script>
+      hljs.initHighlightingOnLoad()
+
+      let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
+
+      // This should probably be throttled.
+      // Especially because it triggers during smooth scrolling.
+      // https://lodash.com/docs/4.17.10#throttle
+      // You could do like...
+      // window.addEventListener("scroll", () => {
+      //    _.throttle(doThatStuff, 100);
+      // });
+      // Only not doing it here to keep this Pen dependency-free.
+
+      window.addEventListener("scroll", event => {
+        let fromTop = window.scrollY;
+
+        mainNavLinks.forEach((link, index) => {
+          let section = document.getElementById(decodeURI(link.hash).substring(1));
+          let nextSection = null
+          if (mainNavLinks[index + 1]) {
+            nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
+          }
+          if (section.offsetTop <= fromTop) {
+            if (nextSection) {
+              if (nextSection.offsetTop > fromTop) {
+                link.classList.add("current");
+              } else {
+                link.classList.remove("current");    
+              }
+            } else {
+              link.classList.add("current");
+            }
+          } else {
+            link.classList.remove("current");
+          }
+        });
+      });
+
+    </script>
+  </body>
+</html>

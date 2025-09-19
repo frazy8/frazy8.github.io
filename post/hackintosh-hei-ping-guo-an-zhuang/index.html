@@ -1,0 +1,394 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Hackintosh黑苹果安装 | Frazy记录站</title>
+<link rel="shortcut icon" href="https://frazy8.github.io/favicon.ico?v=1758256087072">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="https://frazy8.github.io/styles/main.css">
+<link rel="alternate" type="application/atom+xml" title="Hackintosh黑苹果安装 | Frazy记录站 - Atom Feed" href="https://frazy8.github.io/atom.xml">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+
+
+
+    <meta name="description" content="1.准备工作
+1.1硬件兼容性检查
+macOS正常只兼容苹果自家的硬件，所以需要事先确认兼容性。一般与苹果的产品越相似，兼容性越好，有些硬件是完全装不了的。
+具体兼容性可参考国光整理。
+1.2下载镜像
+国内黑果小兵会经常更新一些懒人镜像，这..." />
+    <meta name="keywords" content="mac,macOS,hackintosh,黑苹果,安装,教程" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+    <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.5.1/build/highlight.min.js"></script>
+  </head>
+  <body>
+    <div class="main">
+      <div class="main-content">
+        <div class="site-header">
+  <a href="https://frazy8.github.io">
+  <img class="avatar" src="https://frazy8.github.io/images/avatar.png?v=1758256087072" alt="">
+  </a>
+  <h1 class="site-title">
+    Frazy记录站
+  </h1>
+  <p class="site-description">
+    温故而知新
+  </p>
+  <div class="menu-container">
+    
+      
+        <a href="/" class="menu">
+          首页
+        </a>
+      
+    
+      
+        <a href="/archives" class="menu">
+          归档
+        </a>
+      
+    
+      
+        <a href="/tags" class="menu">
+          标签
+        </a>
+      
+    
+      
+        <a href="/post/about" class="menu">
+          关于
+        </a>
+      
+    
+  </div>
+  <div class="social-container">
+    
+      
+        <a href="https://github.com/caifeng250" target="_blank">
+          <i class="ri-github-line"></i>
+        </a>
+      
+    
+      
+    
+      
+        <a href="https://weibo.com/u/1691109721" target="_blank">
+          <i class="ri-weibo-line"></i>
+        </a>
+      
+    
+      
+        <a href="https://www.zhihu.com/people/frazy-cai" target="_blank">
+          <i class="ri-zhihu-line"></i>
+        </a>
+      
+    
+      
+    
+  </div>
+</div>
+
+        <div class="post-detail">
+          <article class="post">
+            <h2 class="post-title">
+              Hackintosh黑苹果安装
+            </h2>
+            <div class="post-info">
+              <span>
+                2025-05-09
+              </span>
+              <span>
+                5 min read
+              </span>
+              
+                <a href="https://frazy8.github.io/tag/j_wqoQmhrq/" class="post-tag">
+                  # mac
+                </a>
+              
+                <a href="https://frazy8.github.io/tag/HSjTaHHxpCx/" class="post-tag">
+                  # macOS
+                </a>
+              
+                <a href="https://frazy8.github.io/tag/2Vpc6zc77f8/" class="post-tag">
+                  # hackintosh
+                </a>
+              
+                <a href="https://frazy8.github.io/tag/nAzf7oKIlfO/" class="post-tag">
+                  # 黑苹果
+                </a>
+              
+                <a href="https://frazy8.github.io/tag/KqjOgEV1BnQ/" class="post-tag">
+                  # 安装
+                </a>
+              
+                <a href="https://frazy8.github.io/tag/TNvQG_Qdnjf/" class="post-tag">
+                  # 教程
+                </a>
+              
+            </div>
+            
+              <img class="post-feature-image" src="https://frazy8.github.io/post-images/hackintosh-hei-ping-guo-an-zhuang.jpg" alt="">
+            
+            <div class="post-content-wrapper">
+              <div class="post-content" v-pre>
+                <h2 id="1准备工作">1.准备工作</h2>
+<h3 id="11硬件兼容性检查">1.1硬件兼容性检查</h3>
+<p>macOS正常只兼容苹果自家的硬件，所以需要事先确认兼容性。一般与苹果的产品越相似，兼容性越好，有些硬件是完全装不了的。<br>
+具体兼容性可参考<a href="https://apple.sqlsec.com/1-%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/1-2/">国光</a>整理。</p>
+<h3 id="12下载镜像">1.2下载镜像</h3>
+<p>国内<a href="https://blog.daliansky.net/categories/%E4%B8%8B%E8%BD%BD/%E9%95%9C%E5%83%8F/">黑果小兵</a>会经常更新一些懒人镜像，这些镜像很适合小白使用，到博客去下载就行了。如果没有最新的版本也可以去<a href="https://bbs.pcbeta.com/">PCbeta远景</a>论坛找找。</p>
+<p>如果想下载苹果官方的镜像，自己制作的话（不适合小白）可以直接参考 OC 官方文档<a href="https://dortania.github.io/OpenCore-Install-Guide/installer-guide/">Creating the USB | OpenCore Install Guide</a></p>
+<h3 id="13制作启动盘">1.3制作启动盘</h3>
+<p>推荐使用<a href="https://www.balena.io/etcher">balenaEthcher</a>制作启动U盘，过程简单明了，提示写入成功就好了。</p>
+<figure data-type="image" tabindex="1"><img src="https://s2.loli.net/2025/05/09/2vjJklpNVtRy7AH.png" alt="" loading="lazy"></figure>
+<h3 id="14调整分区">1.4调整分区</h3>
+<p>如果之前已安装了Windows系统需要保留，可以先使用<a href="https://www.diskgenius.cn/">DiskGenius</a>查看EFI分区是否大于200M，Mac要求EFI分区至少200M不然安装报错。如果太小建议使在PE环境下用DiskGenius调整大小，安装Mac系统的主分区也可以用这种方法拆分出来。具体可参考DiskGenius官方教程：<a href="https://www.diskgenius.cn/help/partresizing.php">无损分区大小调整</a> <a href="https://www.diskgenius.cn/help/partspliting.php">拆分分区</a>。如果是安装macOS 单系统的话，无需进行磁盘划分，安装系统的时候，直接选择整个磁盘就可以了。</p>
+<p>示例分区如下：ESP&gt;200MB，C盘安装Windows，D盘安装macOS<br>
+<img src="https://s2.loli.net/2025/05/09/Ni7tLgsEfuxKMzj.png" alt="" loading="lazy"></p>
+<h3 id="15bios设置">1.5BIOS设置</h3>
+<p>适用于Intel 主板 BIOS 设置</p>
+<p>关闭项Disable：</p>
+<table>
+<thead>
+<tr>
+<th>选项</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Fast Boot</strong></td>
+<td>快速启动</td>
+</tr>
+<tr>
+<td><strong>Secure Boot</strong></td>
+<td>安全启动</td>
+</tr>
+<tr>
+<td><strong>Serial/COM Port</strong></td>
+<td>串行通讯端口</td>
+</tr>
+<tr>
+<td><strong>Parallel Port</strong></td>
+<td>并行端口</td>
+</tr>
+<tr>
+<td><strong>CSM</strong></td>
+<td><code>Compatibility Support Module</code> 兼容容性支持模块</td>
+</tr>
+<tr>
+<td><strong>Thunderbolt</strong></td>
+<td>雷电，安装的时候容易引发一些玄学问题，建议关掉省事儿</td>
+</tr>
+<tr>
+<td><strong>Intel SGX</strong></td>
+<td>也叫做 <code>Software Guard Extensions</code>，是一种基于 CPU 硬件的安全保障机制</td>
+</tr>
+<tr>
+<td><strong>Intel Platform Trust</strong></td>
+<td>英特尔平台可信技术，主要用于密钥管理和安全认证服务</td>
+</tr>
+<tr>
+<td><strong>CFG Lock</strong></td>
+<td>MSR 0xE2 写保护，如果不关闭的话，config.plist 配置里面设置 <code>AppleXcpmCfgLock</code> 选项为 <code>YES</code> 也可以</td>
+</tr>
+<tr>
+<td><strong>VT-d</strong></td>
+<td>虚拟化技术，如果不关闭的话，config.plist 配置里面设置 <code>DisableIoMapper</code> 选项为<code>YES</code> 也可以</td>
+</tr>
+</tbody>
+</table>
+<p>启用项Enable：</p>
+<table>
+<thead>
+<tr>
+<th>选项</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>VT-x</strong></td>
+<td>也叫 <code>Intel® Virtualization Technology</code> CPU 硬件虚拟化技术</td>
+</tr>
+<tr>
+<td><strong>Above 4G decoding</strong></td>
+<td>4G 以上解码</td>
+</tr>
+<tr>
+<td><strong>Hyper-Threading</strong></td>
+<td>超线程技术</td>
+</tr>
+<tr>
+<td><strong>Execute Disable Bit</strong></td>
+<td>Intel 新一代处理器的功能，主要做病毒防护使用</td>
+</tr>
+<tr>
+<td><strong>DVMT Pre-Allocated: 64MB</strong></td>
+<td>分配给DVMT所需内存，4k 分辨率笔记本建议设置 128MB 及其以上</td>
+</tr>
+<tr>
+<td><strong>EHCI/XHCI Hand-off</strong></td>
+<td>EHCI/XHCI 切换</td>
+</tr>
+<tr>
+<td><strong>OS type: Windows 8.1/10 UEFI</strong></td>
+<td>操作系统类型</td>
+</tr>
+<tr>
+<td><strong>SATA Mode: AHCI</strong></td>
+<td>硬盘启动模式</td>
+</tr>
+</tbody>
+</table>
+<h3 id="16准备引导文件">1.6准备引导文件</h3>
+<p>建议先直接在<a href="https://yandex.ru/">yandex</a>、<a href="https://github.com/">github</a>先搜索下有没有与自己的主板型号或笔记本机型一样的引导配置，可以直接拿来用，不过如果是太旧的OpenCore版本可能无法安装最新版本macOS，需要先升级OpenCore和kext版本，可以使用<a href="https://github.com/ic005k/OCAuxiliaryTools">OpenCore Auxiliary Tools</a>进行升级。</p>
+<p>提供一个以前群友<a href="https://github.com/y010204025">我意</a>维护的<a href="https://github.com/daliansky">黑果小兵</a>上传到GitHub的引导配置合集<a href="https://github.com/daliansky/Hackintosh">黑苹果长期维护机型 EFI</a></p>
+<p>如果找不到与自己主板型号或笔记本机型一直的EFI引导文件下载，但又不嫌麻烦的话，可以自己制作引导程序，可参考<a href="https://apple.sqlsec.com/">国光</a>或<a href="https://oc.skk.moe/">Sukka</a>维护的教程。</p>
+<p>推荐一个<a href="https://github.com/JeoJay127/RapidEFI-Tool">OpenCore 一键配置工具</a></p>
+<p>我的主板是华擎B460M-Pro4，提供一下<a href="https://github.com/caifeng250/B460M-Pro4-Hackintosh">引导文件</a></p>
+<p>得到引导文件后可以直接替换到引导U盘的EFI分区。</p>
+<h2 id="2安装macos">2.安装macOS</h2>
+<p>设置主板从U盘系统，华擎的主板启动项选择是按F11，其他品牌机型按键可参考<a href="https://s2.loli.net/2025/05/09/FPZd5uMr2ekKfTs.png">这里</a></p>
+<figure data-type="image" tabindex="2"><img src="https://s2.loli.net/2025/05/09/ORCPIYTf23BkFmg.png" alt="" loading="lazy"></figure>
+<p>进入 OpenCore 界面的主界面如下：</p>
+<figure data-type="image" tabindex="3"><img src="https://s2.loli.net/2025/05/09/51VQNMAybxwgj3W.png" alt="" loading="lazy"></figure>
+<p>选择Install开头的图标后回车安装，进入安装界面后先使用磁盘工具格式化分区</p>
+<figure data-type="image" tabindex="4"><img src="https://s2.loli.net/2025/05/09/GmDWK5nru3jIEkM.png" alt="" loading="lazy"></figure>
+<figure data-type="image" tabindex="5"><img src="https://s2.loli.net/2025/05/09/RywGnED9NeZmzti.png" alt="" loading="lazy"></figure>
+<p>完成后找到左上角，点击「磁盘工具」选择「退出磁盘工具」，再选择「安装 macOS Big Sur」，「同意」苹果的协议，然后选择之前格式化了的磁盘分区，再点击「继续」</p>
+<figure data-type="image" tabindex="6"><img src="https://s2.loli.net/2025/05/09/aCVvRyDgUXNPhbr.png" alt="" loading="lazy"></figure>
+<p>等待安装，时间会根据你的硬盘和 U 盘的速度而定，可以先喝杯东西等待一下。</p>
+<p>重启后继续按之前的方式引导，选择 macOS installer，会显示安装进度条与剩余时间，等待完成</p>
+<figure data-type="image" tabindex="7"><img src="https://s2.loli.net/2025/05/09/flk6Rzrb5vIXYAu.png" alt="20250509032108116.png" loading="lazy"></figure>
+<p>再次重启后选择之前安装的磁盘即可进入系统初始化界面，按提示完成即可。</p>
+<figure data-type="image" tabindex="8"><img src="https://s2.loli.net/2025/05/09/zdRCwMPbsp6lyfK.png" alt="" loading="lazy"></figure>
+<h2 id="3完善引导">3.完善引导</h2>
+<p>在 Windows 下操作使用DiskGenius访问EFI分区，把之前下载的引导文件拖动到根目录下替换即可</p>
+<figure data-type="image" tabindex="9"><img src="https://s2.loli.net/2025/05/09/MRXzijuHCSv9d8r.png" alt="" loading="lazy"></figure>
+<p>如果重启没有OpenCore启动项也可以用DiskGenius设置</p>
+<figure data-type="image" tabindex="10"><img src="https://s2.loli.net/2025/05/09/B26jlTFcfRea3kD.png" alt="" loading="lazy"></figure>
+<p>启动文件按以下路径设置</p>
+<figure data-type="image" tabindex="11"><img src="https://s2.loli.net/2025/05/09/KEa7mj8geYUWkPL.png" alt="" loading="lazy"></figure>
+<p>打完收工，可以拔掉U盘正常从OpenCore引导启动了。</p>
+<h2 id="mac软件推荐">mac软件推荐</h2>
+<p><a href="https://github.com/jaywcjlove/awesome-mac/blob/master/README-zh.md">Awesome Mac</a>收集了各种类别非常好用的 Mac 应用程序、软件以及工具相关信息。</p>
+<p>参考及引用：<br>
+<a href="https://blog.daliansky.net/">黑果小兵的部落阁</a><br>
+<a href="https://apple.sqlsec.com/">国光的黑苹果教程</a><br>
+<a href="https://oc.skk.moe/">OpenCore 简体中文参考手册</a><br>
+<a href="https://bbs.pcbeta.com/">远景论坛</a></p>
+
+              </div>
+              <div class="toc-container">
+                <ul class="markdownIt-TOC">
+<li>
+<ul>
+<li><a href="#1%E5%87%86%E5%A4%87%E5%B7%A5%E4%BD%9C">1.准备工作</a>
+<ul>
+<li><a href="#11%E7%A1%AC%E4%BB%B6%E5%85%BC%E5%AE%B9%E6%80%A7%E6%A3%80%E6%9F%A5">1.1硬件兼容性检查</a></li>
+<li><a href="#12%E4%B8%8B%E8%BD%BD%E9%95%9C%E5%83%8F">1.2下载镜像</a></li>
+<li><a href="#13%E5%88%B6%E4%BD%9C%E5%90%AF%E5%8A%A8%E7%9B%98">1.3制作启动盘</a></li>
+<li><a href="#14%E8%B0%83%E6%95%B4%E5%88%86%E5%8C%BA">1.4调整分区</a></li>
+<li><a href="#15bios%E8%AE%BE%E7%BD%AE">1.5BIOS设置</a></li>
+<li><a href="#16%E5%87%86%E5%A4%87%E5%BC%95%E5%AF%BC%E6%96%87%E4%BB%B6">1.6准备引导文件</a></li>
+</ul>
+</li>
+<li><a href="#2%E5%AE%89%E8%A3%85macos">2.安装macOS</a></li>
+<li><a href="#3%E5%AE%8C%E5%96%84%E5%BC%95%E5%AF%BC">3.完善引导</a></li>
+<li><a href="#mac%E8%BD%AF%E4%BB%B6%E6%8E%A8%E8%8D%90">mac软件推荐</a></li>
+</ul>
+</li>
+</ul>
+
+              </div>
+            </div>
+          </article>
+        </div>
+
+        
+          <div class="next-post">
+            <div class="next">下一篇</div>
+            <a href="https://frazy8.github.io/post/arch-shuang-xi-tong-an-zhuang-yu-pei-zhi/">
+              <h3 class="post-title">
+                Arch双系统安装与配置
+              </h3>
+            </a>
+          </div>
+        
+
+        
+          
+            <!--评论显示区，请插入合适的位置-->
+<div id="comment"></div>
+<!--Leancloud 操作库:-->
+<script src="//cdn1.lncld.net/static/js/3.6.1/av-min.js"></script>
+<!--Valine 的核心代码库-->
+<script src="//cdn.jsdelivr.net/npm/valine@1.4.4/dist/Valine.min.js"></script>
+<script>
+    new Valine({
+        el:'#comment',
+        appId: 'kx1ilB514vrTQSqtVSUAlbeZ-gzGzoHsz',
+        appKey: '41E5mt2HDKt6Vb4xRnPCNDJ4',
+        placeholder: 'ヾ?≧?≦)o快来评论一下吧!',
+        avatar:'', 
+        visitor: true
+    });
+</script>
+          
+
+          
+        
+
+        <div class="site-footer">
+  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
+  <a class="rss" href="https://frazy8.github.io/atom.xml" target="_blank">
+    <i class="ri-rss-line"></i> RSS
+  </a>
+</div>
+
+      </div>
+    </div>
+
+    <script>
+      hljs.initHighlightingOnLoad()
+
+      let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
+
+      // This should probably be throttled.
+      // Especially because it triggers during smooth scrolling.
+      // https://lodash.com/docs/4.17.10#throttle
+      // You could do like...
+      // window.addEventListener("scroll", () => {
+      //    _.throttle(doThatStuff, 100);
+      // });
+      // Only not doing it here to keep this Pen dependency-free.
+
+      window.addEventListener("scroll", event => {
+        let fromTop = window.scrollY;
+
+        mainNavLinks.forEach((link, index) => {
+          let section = document.getElementById(decodeURI(link.hash).substring(1));
+          let nextSection = null
+          if (mainNavLinks[index + 1]) {
+            nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
+          }
+          if (section.offsetTop <= fromTop) {
+            if (nextSection) {
+              if (nextSection.offsetTop > fromTop) {
+                link.classList.add("current");
+              } else {
+                link.classList.remove("current");    
+              }
+            } else {
+              link.classList.add("current");
+            }
+          } else {
+            link.classList.remove("current");
+          }
+        });
+      });
+
+    </script>
+  </body>
+</html>
