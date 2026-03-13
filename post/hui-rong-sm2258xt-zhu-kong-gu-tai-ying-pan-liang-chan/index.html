@@ -1,0 +1,260 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>慧荣SM2258XT主控固态硬盘量产 | Frazy记录站</title>
+<link rel="shortcut icon" href="https://frazy8.github.io/favicon.ico?v=1773409092523">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="https://frazy8.github.io/styles/main.css">
+<link rel="alternate" type="application/atom+xml" title="慧荣SM2258XT主控固态硬盘量产 | Frazy记录站 - Atom Feed" href="https://frazy8.github.io/atom.xml">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+
+
+
+    <meta name="description" content="之前有块光威2.5寸固态硬盘不识别了，但过了保修期没法售后，最近固态硬盘价格飙升，直接扔了可惜，本着不浪费的原则找到了量产修复教程。
+准备工作
+首先，要准备要一根USB转SATA的易驱线，淘宝只要十几块一根。请注意，有一些硬盘盒可能不支持量..." />
+    <meta name="keywords" content="固态,硬盘,量产,慧荣,SM2258XT,开卡" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+    <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.5.1/build/highlight.min.js"></script>
+  </head>
+  <body>
+    <div class="main">
+      <div class="main-content">
+        <div class="site-header">
+  <a href="https://frazy8.github.io">
+  <img class="avatar" src="https://frazy8.github.io/images/avatar.png?v=1773409092523" alt="">
+  </a>
+  <h1 class="site-title">
+    Frazy记录站
+  </h1>
+  <p class="site-description">
+    温故而知新
+  </p>
+  <div class="menu-container">
+    
+      
+        <a href="/" class="menu">
+          首页
+        </a>
+      
+    
+      
+        <a href="/archives" class="menu">
+          归档
+        </a>
+      
+    
+      
+        <a href="/tags" class="menu">
+          标签
+        </a>
+      
+    
+      
+        <a href="/post/about" class="menu">
+          关于
+        </a>
+      
+    
+  </div>
+  <div class="social-container">
+    
+      
+        <a href="https://github.com/caifeng250" target="_blank">
+          <i class="ri-github-line"></i>
+        </a>
+      
+    
+      
+    
+      
+        <a href="https://weibo.com/u/1691109721" target="_blank">
+          <i class="ri-weibo-line"></i>
+        </a>
+      
+    
+      
+        <a href="https://www.zhihu.com/people/frazy-cai" target="_blank">
+          <i class="ri-zhihu-line"></i>
+        </a>
+      
+    
+      
+    
+  </div>
+</div>
+
+        <div class="post-detail">
+          <article class="post">
+            <h2 class="post-title">
+              慧荣SM2258XT主控固态硬盘量产
+            </h2>
+            <div class="post-info">
+              <span>
+                2026-03-13
+              </span>
+              <span>
+                3 min read
+              </span>
+              
+                <a href="https://frazy8.github.io/tag/eCE0ugKFPS/" class="post-tag">
+                  # 固态
+                </a>
+              
+                <a href="https://frazy8.github.io/tag/JVtAmAErk7m/" class="post-tag">
+                  # 硬盘
+                </a>
+              
+                <a href="https://frazy8.github.io/tag/CrMbiAiUlsv/" class="post-tag">
+                  # 量产
+                </a>
+              
+                <a href="https://frazy8.github.io/tag/xXmSqT7gA6m/" class="post-tag">
+                  # 慧荣
+                </a>
+              
+                <a href="https://frazy8.github.io/tag/UaSaw3HkOFZ/" class="post-tag">
+                  # SM2258XT
+                </a>
+              
+                <a href="https://frazy8.github.io/tag/pEJsLNr9Rro/" class="post-tag">
+                  # 开卡
+                </a>
+              
+            </div>
+            
+              <img class="post-feature-image" src="https://frazy8.github.io/post-images/hui-rong-sm2258xt-zhu-kong-gu-tai-ying-pan-liang-chan.png" alt="">
+            
+            <div class="post-content-wrapper">
+              <div class="post-content" v-pre>
+                <p>之前有块光威2.5寸固态硬盘不识别了，但过了保修期没法售后，最近固态硬盘价格飙升，直接扔了可惜，本着不浪费的原则找到了量产修复教程。</p>
+<h2 id="准备工作">准备工作</h2>
+<p>首先，要准备要一根USB转SATA的易驱线，淘宝只要十几块一根。请注意，有一些硬盘盒可能不支持量产。<br>
+<img src="https://files.seeusercontent.com/2026/03/13/kz3L/20260313165714175.webp" alt="" loading="lazy"></p>
+<p>然后，拆开硬盘外壳找到主控芯片和存储颗粒型号，我的主控芯片是慧荣<code>SM2258XT</code> 存储颗粒是<code>PF29R04T2AWCMG2</code> 然后确认颗粒对应制程 <a href="https://flashinfo.top/FlashInfo">Flashinfo</a></p>
+<figure data-type="image" tabindex="1"><img src="https://files.seeusercontent.com/2026/03/13/u9Sl/20260313171836484.jpg" alt="" loading="lazy"></figure>
+<p>搜索并下载对应的开卡软件，量产部落的工具非常全但需要会员，我用的是数码之家社区<a href="https://www.mydigit.cn/home.php?mod=space&amp;uid=2186366">Avidia</a> 整合的50合一 SM2258XT万能包，下载链接：<a href="https://pan.quark.cn/s/154b2cf328b5">https://pan.quark.cn/s/154b2cf328b5</a>，提取码：UCb8</p>
+<h2 id="连接电脑">连接电脑</h2>
+<p>用镊子或细铁丝短接前图中的ROM短接点，然后连接易驱线插入电脑USB口，打开量产工具软件点击<code>搜索设备</code>，正常的话会显示一个1024M的设备如下图：<br>
+<img src="https://files.seeusercontent.com/2026/03/13/iM9a/20260313172713307.png" alt="" loading="lazy"></p>
+<h2 id="rdt测试">RDT测试</h2>
+<p>选择<code>设定</code>标签后<code>编辑配置</code>，密码是两个空格；选择<code>1.Don't Reference Original Bad </code>不参考原始坏块；勾选<code>RDT测试</code>后点击<code>RDT设定</code><br>
+<img src="https://files.seeusercontent.com/2026/03/13/nGe1/PixPin_2026-03-13_17-30-28.png" alt="PixPin_2026-03-13_17-30-28.png" loading="lazy"></p>
+<p>RDT设定参考：<br>
+<img src="https://files.seeusercontent.com/2026/03/13/Gh5r/PixPin_2026-03-13_17-46-21.png" alt="PixPin_2026-03-13_17-46-21.png" loading="lazy"></p>
+<p>完成后<code>保存配置</code>，返回<code>开卡</code>标签点击<code>开始</code>，等状态显示Pass!后拔掉硬盘，RDT配置数据已经刷入硬盘了，接下来再次上电就会自动开始跑。</p>
+<p>可以直接找个充电头插上易驱线自动跑RDT，不用非要插电脑上跑浪费电。红灯规律闪烁就是在跑RDT了，刚插上他不会马上开始闪的，需要等待一会儿，跑完之后这个红灯就灭了或者停止闪烁，之后再插回电脑打开刚才开卡软件，不需要短接ROM口。</p>
+<h2 id="正式开卡">正式开卡</h2>
+<p>重新插上硬盘以后搜索设备点击<code>RDT结果</code>标签等几秒钟就读取出来刚才的RDT检测情况了，坏快数就是根据我们之前设置的严格程度阈值来筛选出来不满足我们阈值的块，选用RDT开卡就会屏蔽掉这些块不使用他们从而修复硬盘。</p>
+<p>再次<code>编辑配置</code> 选择<code>3.reference RDT Bad</code>并勾选<code>保留RDT</code>，取消勾选<code>RDT测试</code>，保存配置后回到<code>开卡</code>标签点击开始，等待开卡完成。<br>
+<img src="https://files.seeusercontent.com/2026/03/13/Tg7n/20260313180009998.png" alt="" loading="lazy"></p>
+<p>完成后就可以使用磁盘管理工具格式化硬盘正常使用了。</p>
+<p>参考资料：<br>
+<a href="https://www.mydigit.cn/thread-526697-1-1.html">https://www.mydigit.cn/thread-526697-1-1.html</a><br>
+<a href="https://www.mydigit.cn/thread-513719-1-1.html">https://www.mydigit.cn/thread-513719-1-1.html</a></p>
+
+              </div>
+              <div class="toc-container">
+                <ul class="markdownIt-TOC">
+<li>
+<ul>
+<li><a href="#%E5%87%86%E5%A4%87%E5%B7%A5%E4%BD%9C">准备工作</a></li>
+<li><a href="#%E8%BF%9E%E6%8E%A5%E7%94%B5%E8%84%91">连接电脑</a></li>
+<li><a href="#rdt%E6%B5%8B%E8%AF%95">RDT测试</a></li>
+<li><a href="#%E6%AD%A3%E5%BC%8F%E5%BC%80%E5%8D%A1">正式开卡</a></li>
+</ul>
+</li>
+</ul>
+
+              </div>
+            </div>
+          </article>
+        </div>
+
+        
+          <div class="next-post">
+            <div class="next">下一篇</div>
+            <a href="https://frazy8.github.io/post/unraid-geng-huan-docker-yuan/">
+              <h3 class="post-title">
+                Unraid更换docker源
+              </h3>
+            </a>
+          </div>
+        
+
+        
+          
+            <!--评论显示区，请插入合适的位置-->
+<div id="comment"></div>
+<!--Leancloud 操作库:-->
+<script src="//cdn1.lncld.net/static/js/3.6.1/av-min.js"></script>
+<!--Valine 的核心代码库-->
+<script src="//cdn.jsdelivr.net/npm/valine@1.4.4/dist/Valine.min.js"></script>
+<script>
+    new Valine({
+        el:'#comment',
+        appId: 'kx1ilB514vrTQSqtVSUAlbeZ-gzGzoHsz',
+        appKey: '41E5mt2HDKt6Vb4xRnPCNDJ4',
+        placeholder: 'ヾ?≧?≦)o快来评论一下吧!',
+        avatar:'', 
+        visitor: true
+    });
+</script>
+          
+
+          
+        
+
+        <div class="site-footer">
+  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
+  <a class="rss" href="https://frazy8.github.io/atom.xml" target="_blank">
+    <i class="ri-rss-line"></i> RSS
+  </a>
+</div>
+
+      </div>
+    </div>
+
+    <script>
+      hljs.initHighlightingOnLoad()
+
+      let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
+
+      // This should probably be throttled.
+      // Especially because it triggers during smooth scrolling.
+      // https://lodash.com/docs/4.17.10#throttle
+      // You could do like...
+      // window.addEventListener("scroll", () => {
+      //    _.throttle(doThatStuff, 100);
+      // });
+      // Only not doing it here to keep this Pen dependency-free.
+
+      window.addEventListener("scroll", event => {
+        let fromTop = window.scrollY;
+
+        mainNavLinks.forEach((link, index) => {
+          let section = document.getElementById(decodeURI(link.hash).substring(1));
+          let nextSection = null
+          if (mainNavLinks[index + 1]) {
+            nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
+          }
+          if (section.offsetTop <= fromTop) {
+            if (nextSection) {
+              if (nextSection.offsetTop > fromTop) {
+                link.classList.add("current");
+              } else {
+                link.classList.remove("current");    
+              }
+            } else {
+              link.classList.add("current");
+            }
+          } else {
+            link.classList.remove("current");
+          }
+        });
+      });
+
+    </script>
+  </body>
+</html>
